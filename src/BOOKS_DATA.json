@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Linchpin",
+    "author": "Seth Godin",
+    "rating": "4.8"
+  },
+  {
+    "id": 2,
+    "title": "Funding Your Startup",
+    "author": "Dhruv Nath & Sushanto Mitra",
+    "rating": "4.8"
+  },
+  {
+    "id": 3,
+    "title": "Good to Great",
+    "author": "Jim Collins",
+    "rating": "4.7"
+  },
+  {
+    "id": 4,
+    "title": "Rework",
+    "author": "Jason Fried & David Heinemeir",
+    "rating": "5.0"
+  },
+  {
+    "id": 5,
+    "title": "Business Adventures",
+    "author": "John Brooks",
+    "rating": "4.7"
+  },
+  {
+    "id": 6,
+    "title": "The Personal MBA",
+    "author": "Josh Kauffman",
+    "rating": "4.8"
+  },
+  {
+    "id": 7,
+    "title": "The Four",
+    "author": "Scott Galloway",
+    "rating": "4.7"
+  },
+  {
+    "id": 8,
+    "title": "Zero To One",
+    "author": "Peter Thiel",
+    "rating": "4.9"
+  },
+  {
+    "id": 9,
+    "title": "The Lean Startup",
+    "author": "Eric Rayes",
+    "rating": "4.9"
+  }
+]
