@@ -5,7 +5,7 @@ import "@fontsource/poppins";
 export const Tagline = styled.p`
   font-size: 24px;
   font-family: "Kalam", cursive;
-  margin: 26px 16px;
+  margin: 80px 16px 32px 16px;
   text-align: center;
   color: #728cb3;
 `;
