@@ -23,15 +23,14 @@ export function BookCard() {
     <>
       {booksData.map((book) => {
         return (
-          <div key={book.id}>
-            <Card>
-              <div style={{ width: "40%" }}>
-                <Img fluid={data.allImageSharp.nodes[book.id - 1].fluid} />
-                <Title>{book.title}</Title>
-                <Author>{book.author}</Author>
-              </div>
-            </Card>
-          </div>
+          <Card key={book.id}>
+            <Img
+              style={{ width: "40%" }}
+              fluid={data.allImageSharp.nodes[book.id - 1].fluid}
+            />
+            <Title>{book.title}</Title>
+            <Author>{book.author}</Author>
+          </Card>
         );
       })}
     </>

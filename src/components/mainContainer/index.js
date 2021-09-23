@@ -2,6 +2,8 @@ import styled from "styled-components/macro";
 import "@fontsource/kalam/700.css";
 import "@fontsource/poppins";
 
+export const Title = styled.title``;
+
 export const Tagline = styled.p`
   font-size: 24px;
   font-family: "Kalam", cursive;
