@@ -18,11 +18,12 @@ export const Card = styled.div`
 
 export const Title = styled.p`
   font-weight: 1000;
-  font-size: 24px;
+  font-size: 18px;
   text-align: center;
   margin: 8px 0 0 0;
 `;
 
 export const Author = styled.p`
   text-align: center;
+  font-size: 14px;
 `;

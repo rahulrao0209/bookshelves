@@ -1,24 +1,53 @@
 import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { BookCard } from "../bookCard/BookCard";
+import SwiperCore, { Pagination } from "swiper";
 import { RackContainer } from ".";
-// import "swiper/css";
+import { BookCard } from "../bookCard/BookCard";
+import BOOKS_DATA from "../../BOOKS_DATA.json";
+import "swiper/css";
+import "swiper/css/pagination";
+
+SwiperCore.use([Pagination]);
 
 export function BookRack() {
+  const booksData = JSON.parse(JSON.stringify(BOOKS_DATA));
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allImageSharp {
+        nodes {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <>
       <RackContainer>
         <Swiper
-          spaceBetween={2}
-          slidesPerView={3}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          slidesPerView={2}
+          spaceBetween={10}
+          pagination={{
+            clickable: true,
+            dynamicBullets: true,
+          }}
+          className="mySwiper"
+          style={{ maxWidth: "100vw" }}
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
+          {booksData.map((book) => (
+            <SwiperSlide id={book.id}>
+              <BookCard
+                // id={book.id}
+                image={data.allImageSharp.nodes[book.id - 1].fluid}
+                title={book.title}
+                author={book.author}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
-        <BookCard />
       </RackContainer>
     </>
   );
