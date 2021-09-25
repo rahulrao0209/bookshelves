@@ -6,9 +6,15 @@ export function BookCard({ image, title, author }) {
   return (
     <>
       <Card>
-        <Img style={{ width: "50%" }} fluid={image} />
-        <Title>{title}</Title>
+        <Img
+          style={{
+            width: "80%",
+            boxShadow: "4px 8px 12px rgba(0, 0, 0, 0.25)",
+          }}
+          fluid={image}
+        />
         <Author>{author}</Author>
+        <Title>{title}</Title>
       </Card>
     </>
   );

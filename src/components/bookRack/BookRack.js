@@ -28,8 +28,8 @@ export function BookRack() {
     <>
       <RackContainer>
         <Swiper
-          slidesPerView={2}
-          spaceBetween={10}
+          slidesPerView={2.5}
+          spaceBetween={0}
           pagination={{
             clickable: true,
             dynamicBullets: true,
