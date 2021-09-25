@@ -7,7 +7,7 @@ export const Navbar = styled.div`
   bottom: 0px;
   width: 100%;
   padding: 16px;
-  z-index: 0;
+  z-index: 1001;
   left: 0;
 `;
 
@@ -31,4 +31,9 @@ export const NavbarButtons = styled.div`
   align-items: center;
 `;
 
-export const Button = styled.button``;
+export const Button = styled.div`
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+`;
