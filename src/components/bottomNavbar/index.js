@@ -9,6 +9,7 @@ export const Navbar = styled.div`
   padding: 16px;
   z-index: 1001;
   left: 0;
+  box-shadow: 0px -8px 16px rgba(0, 0, 0, 0.25);
 `;
 
 export const Title = styled.p`
@@ -33,9 +34,13 @@ export const NavbarButtons = styled.div`
 
 export const Button = styled.div`
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    scale: 1.05;
+  }
 `;
 
 export const ButtonContainer = styled.div`
@@ -50,4 +55,8 @@ export const ButtonCategoryName = styled.p`
   font-size: 14px;
   text-align: center;
   color: #275cab;
+
+  &:hover {
+    color: #002967;
+  }
 `;

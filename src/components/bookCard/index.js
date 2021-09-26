@@ -7,7 +7,7 @@ export const Card = styled.div`
   font-family: "Poppins", sans-serif;
   flex-flow: column nowrap;
   align-items: center;
-  margin: 32px 0;
+  margin: 16px 0;
   justify-content: center;
 `;
 
