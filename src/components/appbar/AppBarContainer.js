@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar, Title } from ".";
 
-export default function AppBarContainer({ children, ...restProps }) {
+export function AppBarContainer({ children, ...restProps }) {
   return (
     <>
       <AppBar {...restProps}>

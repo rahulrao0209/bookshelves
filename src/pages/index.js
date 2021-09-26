@@ -1,7 +1,5 @@
 import * as React from "react";
-import AppBarContainer from "../components/appbar/AppBarContainer";
-import { MainContainer } from "../components/mainContainer/MainContainer";
-import { BottomNavbar } from "../components/bottomNavbar/BottomNavbar";
+import { Layout } from "../components/layout/Layout";
 import { createGlobalStyle } from "styled-components/macro";
 
 const GlobalStyle = createGlobalStyle`
@@ -16,9 +14,7 @@ const IndexPage = () => {
   return (
     <>
       <GlobalStyle />
-      <AppBarContainer />
-      <MainContainer />
-      <BottomNavbar />
+      <Layout />
     </>
   );
 };

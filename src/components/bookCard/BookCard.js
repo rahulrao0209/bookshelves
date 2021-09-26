@@ -8,7 +8,7 @@ export function BookCard({ image, title, author }) {
       <Card>
         <Img
           style={{
-            width: "80%",
+            width: "70%",
             boxShadow: "4px 8px 12px rgba(0, 0, 0, 0.25)",
           }}
           fluid={image}

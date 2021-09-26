@@ -37,3 +37,17 @@ export const Button = styled.div`
   height: 80px;
   box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
 `;
+
+export const ButtonContainer = styled.div`
+  display: flex;
+  max-width: 90px;
+  flex-direction: column;
+`;
+
+export const ButtonCategoryName = styled.p`
+  margin: 12px 0 0 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: #275cab;
+`;
