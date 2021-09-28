@@ -10,7 +10,7 @@ import {
   ButtonCategoryName,
 } from ".";
 
-export function BottomNavbar({ assignNewCategory }) {
+export function BottomNavbar({ category, assignNewCategory }) {
   const data = useStaticQuery(graphql`
     query GetCategory {
       allImageSharp(skip: 9) {
@@ -22,7 +22,8 @@ export function BottomNavbar({ assignNewCategory }) {
       }
     }
   `);
-
+  // const buttonInactiveStyle = {}
+  console.log("category: ", category);
   const updateButtonState = (category) => {
     assignNewCategory(category);
   };
@@ -33,40 +34,60 @@ export function BottomNavbar({ assignNewCategory }) {
         <Title>Categories</Title>
         <NavbarButtons>
           <ButtonContainer>
-            <Button onClick={() => updateButtonState("Innovation")}>
+            <Button
+              onClick={() => updateButtonState("Innovation")}
+              isActive={category === "Innovation"}
+            >
               <Img
                 style={{ borderRadius: "50%" }}
                 fluid={data.allImageSharp.nodes[0].fluid}
               />
             </Button>
-            <ButtonCategoryName>Innovation</ButtonCategoryName>
+            <ButtonCategoryName isActive={category === "Innovation"}>
+              Innovation
+            </ButtonCategoryName>
           </ButtonContainer>
           <ButtonContainer>
-            <Button onClick={() => updateButtonState("Business")}>
+            <Button
+              onClick={() => updateButtonState("Business and Startups")}
+              isActive={category === "Business and Startups"}
+            >
               <Img
                 style={{ borderRadius: "50%" }}
                 fluid={data.allImageSharp.nodes[1].fluid}
               />
             </Button>
-            <ButtonCategoryName>Business</ButtonCategoryName>
+            <ButtonCategoryName isActive={category === "Business and Startups"}>
+              Business
+            </ButtonCategoryName>
           </ButtonContainer>
           <ButtonContainer>
-            <Button onClick={() => updateButtonState("Psychology")}>
+            <Button
+              onClick={() => updateButtonState("Psychology")}
+              isActive={category === "Psychology"}
+            >
               <Img
                 style={{ borderRadius: "50%" }}
                 fluid={data.allImageSharp.nodes[2].fluid}
               />
             </Button>
-            <ButtonCategoryName>Psychology</ButtonCategoryName>
+            <ButtonCategoryName isActive={category === "Psychology"}>
+              Psychology
+            </ButtonCategoryName>
           </ButtonContainer>
           <ButtonContainer>
-            <Button onClick={() => updateButtonState("Finance")}>
+            <Button
+              onClick={() => updateButtonState("Finance")}
+              isActive={category === "Finance"}
+            >
               <Img
                 style={{ borderRadius: "50%" }}
                 fluid={data.allImageSharp.nodes[3].fluid}
               />
             </Button>
-            <ButtonCategoryName>Finance</ButtonCategoryName>
+            <ButtonCategoryName isActive={category === "Finance"}>
+              Finance
+            </ButtonCategoryName>
           </ButtonContainer>
         </NavbarButtons>
       </Navbar>

@@ -36,11 +36,9 @@ export const Button = styled.div`
   border-radius: 50%;
   width: 65px;
   height: 65px;
-  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
-
-  &:hover {
-    scale: 1.05;
-  }
+  box-shadow: ${(props) =>
+    props.isActive ? null : "8px 12px 16px rgba(0, 0, 0, 0.40)"};
+  transition: box-shadow 0.2s ease-out;
 `;
 
 export const ButtonContainer = styled.div`
@@ -50,11 +48,11 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ButtonCategoryName = styled.p`
-  margin: 12px 0 0 0;
+  margin: 22px 0 0 0;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   text-align: center;
-  color: #275cab;
+  color: ${(props) => (props.isActive ? "#02255a" : "#275cab")};
 
   &:hover {
     color: #002967;
