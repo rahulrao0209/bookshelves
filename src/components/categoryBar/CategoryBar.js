@@ -3,14 +3,13 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import {
   Navbar,
-  Title,
   NavbarButtons,
   Button,
   ButtonContainer,
   ButtonCategoryName,
 } from ".";
 
-export function BottomNavbar({ category, assignNewCategory }) {
+export function CategoryBar({ category, assignNewCategory }) {
   const data = useStaticQuery(graphql`
     query GetCategory {
       allImageSharp(skip: 9) {
@@ -22,7 +21,6 @@ export function BottomNavbar({ category, assignNewCategory }) {
       }
     }
   `);
-  // const buttonInactiveStyle = {}
   console.log("category: ", category);
   const updateButtonState = (category) => {
     assignNewCategory(category);
@@ -31,7 +29,7 @@ export function BottomNavbar({ category, assignNewCategory }) {
   return (
     <>
       <Navbar>
-        <Title>Categories</Title>
+        {/* <Title>Categories</Title> */}
         <NavbarButtons>
           <ButtonContainer>
             <Button

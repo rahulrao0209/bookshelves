@@ -2,14 +2,12 @@ import styled from "styled-components/macro";
 import "@fontsource/open-sans/700.css";
 
 export const Navbar = styled.div`
-  position: fixed;
-  min-height: 170px;
-  bottom: 0px;
+  position: relative;
+  margin: 60px 0 0 0;
   width: 100%;
-  padding: 16px;
+  padding: 4px;
+  background: #f9f9f9;
   z-index: 1001;
-  left: 0;
-  box-shadow: 0px -8px 16px rgba(0, 0, 0, 0.25);
 `;
 
 export const Title = styled.p`
@@ -19,8 +17,8 @@ export const Title = styled.p`
   margin: 0 auto;
   color: #275cab;
   border-bottom: 0.1px solid #275cab;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
   text-align: center;
 `;
 
@@ -34,11 +32,12 @@ export const NavbarButtons = styled.div`
 
 export const Button = styled.div`
   border-radius: 50%;
-  width: 65px;
-  height: 65px;
+  width: 60px;
+  height: 60px;
   box-shadow: ${(props) =>
     props.isActive ? null : "8px 12px 16px rgba(0, 0, 0, 0.40)"};
   transition: box-shadow 0.2s ease-out;
+  z-index: 1002;
 `;
 
 export const ButtonContainer = styled.div`
@@ -48,9 +47,9 @@ export const ButtonContainer = styled.div`
 `;
 
 export const ButtonCategoryName = styled.p`
-  margin: 22px 0 0 0;
+  margin: 8px 0 0 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   color: ${(props) => (props.isActive ? "#02255a" : "#275cab")};
 
