@@ -4,8 +4,9 @@ export const FooterContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #082551;
+  background: #0b3778;
   min-height: 180px;
+  width: 100vw;
 `;
 
 export const FooterContent = styled.p`

@@ -3,7 +3,7 @@ import { FooterContainer, FooterContent } from ".";
 export const Footer = () => {
   return (
     <FooterContainer>
-      <FooterContent>Copyright Bookshelves 2021</FooterContent>;
+      <FooterContent> &#169; Copyright Bookshelves 2021</FooterContent>;
     </FooterContainer>
   );
 };
