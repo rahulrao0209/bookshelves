@@ -2,8 +2,8 @@ import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import {
-  Navbar,
-  NavbarButtons,
+  CategoryContainer,
+  CategoryButtons,
   Button,
   ButtonContainer,
   ButtonCategoryName,
@@ -28,9 +28,8 @@ export function CategoryBar({ category, assignNewCategory }) {
 
   return (
     <>
-      <Navbar>
-        {/* <Title>Categories</Title> */}
-        <NavbarButtons>
+      <CategoryContainer>
+        <CategoryButtons>
           <ButtonContainer>
             <Button
               onClick={() => updateButtonState("Innovation")}
@@ -87,8 +86,22 @@ export function CategoryBar({ category, assignNewCategory }) {
               Finance
             </ButtonCategoryName>
           </ButtonContainer>
-        </NavbarButtons>
-      </Navbar>
+          <ButtonContainer>
+            <Button
+              onClick={() => updateButtonState("Spirituality")}
+              isActive={category === "Spirituality"}
+            >
+              <Img
+                style={{ borderRadius: "50%" }}
+                fluid={data.allImageSharp.nodes[4].fluid}
+              />
+            </Button>
+            <ButtonCategoryName isActive={category === "Spirituality"}>
+              Spirituality
+            </ButtonCategoryName>
+          </ButtonContainer>
+        </CategoryButtons>
+      </CategoryContainer>
     </>
   );
 }

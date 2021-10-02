@@ -4,8 +4,8 @@ import "@fontsource/carter-one";
 export const AppBar = styled.div`
   display: flex;
   position: fixed;
-  z-index: 1000;
-  top: 0px;
+  z-index: 2000;
+  top: 0;
   left: 0;
   width: 100%;
   align-items: center;

@@ -30,17 +30,12 @@ export function BookRack() {
         <Swiper
           slidesPerView={2.5}
           spaceBetween={0}
-          pagination={{
-            clickable: true,
-            dynamicBullets: true,
-          }}
           className="mySwiper"
           style={{ maxWidth: "100vw" }}
         >
           {booksData.map((book) => (
-            <SwiperSlide id={book.id}>
+            <SwiperSlide key={book.id}>
               <BookCard
-                // id={book.id}
                 image={data.allImageSharp.nodes[book.id - 1].fluid}
                 title={book.title}
                 author={book.author}
@@ -51,17 +46,12 @@ export function BookRack() {
         <Swiper
           slidesPerView={2.5}
           spaceBetween={0}
-          pagination={{
-            clickable: true,
-            dynamicBullets: true,
-          }}
           className="mySwiper"
           style={{ maxWidth: "100vw" }}
         >
           {booksData.map((book) => (
-            <SwiperSlide id={book.id}>
+            <SwiperSlide key={book.id}>
               <BookCard
-                // id={book.id}
                 image={data.allImageSharp.nodes[book.id - 1].fluid}
                 title={book.title}
                 author={book.author}
@@ -72,17 +62,12 @@ export function BookRack() {
         <Swiper
           slidesPerView={2.5}
           spaceBetween={0}
-          pagination={{
-            clickable: true,
-            dynamicBullets: true,
-          }}
           className="mySwiper"
           style={{ maxWidth: "100vw" }}
         >
           {booksData.map((book) => (
-            <SwiperSlide id={book.id}>
+            <SwiperSlide key={book.id}>
               <BookCard
-                // id={book.id}
                 image={data.allImageSharp.nodes[book.id - 1].fluid}
                 title={book.title}
                 author={book.author}

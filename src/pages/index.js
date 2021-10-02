@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Layout } from "../components/layout/Layout";
 import { createGlobalStyle } from "styled-components/macro";
+import { MainContainer } from "../components/mainContainer/MainContainer";
+import { CategoryBar } from "../components/categoryBar/CategoryBar";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -11,10 +13,21 @@ const GlobalStyle = createGlobalStyle`
   }`;
 
 const IndexPage = () => {
+  const [category, setCategory] = React.useState("Business and Startups");
+
+  const assignNewCategory = (newCategory) => {
+    setCategory(newCategory);
+  };
   return (
     <>
       <GlobalStyle />
-      <Layout />
+      <Layout>
+        <CategoryBar
+          category={category}
+          assignNewCategory={assignNewCategory}
+        />
+        <MainContainer category={category} />
+      </Layout>
     </>
   );
 };
