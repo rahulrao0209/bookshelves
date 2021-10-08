@@ -11,17 +11,20 @@ import {
 
 export function CategoryBar({ category, assignNewCategory }) {
   const data = useStaticQuery(graphql`
-    query GetCategory {
-      allImageSharp(skip: 9) {
+    query GetCategoryImages {
+      allFile(filter: { sourceInstanceName: { eq: "bottomNavbar" } }) {
         nodes {
-          fluid {
-            ...GatsbyImageSharpFluid
+          childrenImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
     }
   `);
-  console.log("category: ", category);
+  // console.log("data", data);
+  // console.log("image", data.allFile.nodes[0].childrenImageSharp[0].fluid);
   const updateButtonState = (category) => {
     assignNewCategory(category);
   };
@@ -37,7 +40,7 @@ export function CategoryBar({ category, assignNewCategory }) {
             >
               <Img
                 style={{ borderRadius: "50%" }}
-                fluid={data.allImageSharp.nodes[0].fluid}
+                fluid={data.allFile.nodes[0].childrenImageSharp[0].fluid}
               />
             </Button>
             <ButtonCategoryName isActive={category === "Innovation"}>
@@ -51,7 +54,7 @@ export function CategoryBar({ category, assignNewCategory }) {
             >
               <Img
                 style={{ borderRadius: "50%" }}
-                fluid={data.allImageSharp.nodes[1].fluid}
+                fluid={data.allFile.nodes[1].childrenImageSharp[0].fluid}
               />
             </Button>
             <ButtonCategoryName isActive={category === "Business and Startups"}>
@@ -65,7 +68,7 @@ export function CategoryBar({ category, assignNewCategory }) {
             >
               <Img
                 style={{ borderRadius: "50%" }}
-                fluid={data.allImageSharp.nodes[2].fluid}
+                fluid={data.allFile.nodes[2].childrenImageSharp[0].fluid}
               />
             </Button>
             <ButtonCategoryName isActive={category === "Psychology"}>
@@ -79,7 +82,7 @@ export function CategoryBar({ category, assignNewCategory }) {
             >
               <Img
                 style={{ borderRadius: "50%" }}
-                fluid={data.allImageSharp.nodes[3].fluid}
+                fluid={data.allFile.nodes[3].childrenImageSharp[0].fluid}
               />
             </Button>
             <ButtonCategoryName isActive={category === "Finance"}>
@@ -93,7 +96,7 @@ export function CategoryBar({ category, assignNewCategory }) {
             >
               <Img
                 style={{ borderRadius: "50%" }}
-                fluid={data.allImageSharp.nodes[4].fluid}
+                fluid={data.allFile.nodes[4].childrenImageSharp[0].fluid}
               />
             </Button>
             <ButtonCategoryName isActive={category === "Spirituality"}>

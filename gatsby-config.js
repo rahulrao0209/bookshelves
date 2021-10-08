@@ -11,8 +11,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `business`,
-        path: `${__dirname}/src/images/business`,
+        name: `businessRack2`,
+        path: `${__dirname}/src/images/business/businessRack2`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `businessRack1`,
+        path: `${__dirname}/src/images/business/businessRack1`,
       },
     },
     {
