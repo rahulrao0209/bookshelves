@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
   }`;
 
 const IndexPage = () => {
-  const [category, setCategory] = React.useState("Business and Startups");
+  const [category, setCategory] = React.useState("Finance");
 
   const assignNewCategory = (newCategory) => {
     setCategory(newCategory);

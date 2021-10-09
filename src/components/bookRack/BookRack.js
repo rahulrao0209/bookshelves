@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import { RackContainer } from ".";
 import { BookCard } from "../bookCard/BookCard";
-import { getBookName } from "../../../utils/getBookName";
+import { getNameFromSrc } from "../../../utils/getNameFromSrc";
 import BOOKS_DATA from "../../BOOKS_DATA.json";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -27,7 +27,6 @@ export function BookRack() {
     }
   `);
 
-  // console.log("Booksdata: ", data);
   return (
     <>
       <RackContainer>
@@ -42,7 +41,7 @@ export function BookRack() {
               <SwiperSlide key={book.id}>
                 <BookCard
                   image={data.allFile.nodes[index].childrenImageSharp[0].fluid}
-                  title={getBookName(
+                  title={getNameFromSrc(
                     data.allFile.nodes[index].childrenImageSharp[0].fluid.src
                   )}
                   author={book.author}
@@ -61,7 +60,7 @@ export function BookRack() {
             <SwiperSlide key={book.id}>
               <BookCard
                 image={data.allFile.nodes[index].childrenImageSharp[0].fluid}
-                title={getBookName(
+                title={getNameFromSrc(
                   data.allFile.nodes[index].childrenImageSharp[0].fluid.src
                 )}
                 author={book.author}
@@ -79,7 +78,7 @@ export function BookRack() {
             <SwiperSlide key={book.id}>
               <BookCard
                 image={data.allFile.nodes[index].childrenImageSharp[0].fluid}
-                title={getBookName(
+                title={getNameFromSrc(
                   data.allFile.nodes[index].childrenImageSharp[0].fluid.src
                 )}
                 author={book.author}

@@ -1,4 +1,4 @@
-export const getBookName = (src) => {
+export const getNameFromSrc = (src) => {
   const lastIndexOfForwardSlash = src.lastIndexOf("/");
 
   // Get the kebab case name from src

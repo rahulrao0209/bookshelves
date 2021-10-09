@@ -1,13 +1,11 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
-import {
-  CategoryContainer,
-  CategoryButtons,
-  Button,
-  ButtonContainer,
-  ButtonCategoryName,
-} from ".";
+import { getNameFromSrc } from "../../../utils/getNameFromSrc";
+import { CategoryButton } from "../categoryButton/CategoryButton";
+import { CategoryContainer, CategoryButtons } from ".";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export function CategoryBar({ category, assignNewCategory }) {
   const data = useStaticQuery(graphql`
@@ -23,8 +21,9 @@ export function CategoryBar({ category, assignNewCategory }) {
       }
     }
   `);
-  // console.log("data", data);
-  // console.log("image", data.allFile.nodes[0].childrenImageSharp[0].fluid);
+
+  const buttonArray = data.allFile.nodes;
+
   const updateButtonState = (category) => {
     assignNewCategory(category);
   };
@@ -33,76 +32,28 @@ export function CategoryBar({ category, assignNewCategory }) {
     <>
       <CategoryContainer>
         <CategoryButtons>
-          <ButtonContainer>
-            <Button
-              onClick={() => updateButtonState("Innovation")}
-              isActive={category === "Innovation"}
-            >
-              <Img
-                style={{ borderRadius: "50%" }}
-                fluid={data.allFile.nodes[0].childrenImageSharp[0].fluid}
-              />
-            </Button>
-            <ButtonCategoryName isActive={category === "Innovation"}>
-              Innovation
-            </ButtonCategoryName>
-          </ButtonContainer>
-          <ButtonContainer>
-            <Button
-              onClick={() => updateButtonState("Business and Startups")}
-              isActive={category === "Business and Startups"}
-            >
-              <Img
-                style={{ borderRadius: "50%" }}
-                fluid={data.allFile.nodes[1].childrenImageSharp[0].fluid}
-              />
-            </Button>
-            <ButtonCategoryName isActive={category === "Business and Startups"}>
-              Business
-            </ButtonCategoryName>
-          </ButtonContainer>
-          <ButtonContainer>
-            <Button
-              onClick={() => updateButtonState("Psychology")}
-              isActive={category === "Psychology"}
-            >
-              <Img
-                style={{ borderRadius: "50%" }}
-                fluid={data.allFile.nodes[2].childrenImageSharp[0].fluid}
-              />
-            </Button>
-            <ButtonCategoryName isActive={category === "Psychology"}>
-              Psychology
-            </ButtonCategoryName>
-          </ButtonContainer>
-          <ButtonContainer>
-            <Button
-              onClick={() => updateButtonState("Finance")}
-              isActive={category === "Finance"}
-            >
-              <Img
-                style={{ borderRadius: "50%" }}
-                fluid={data.allFile.nodes[3].childrenImageSharp[0].fluid}
-              />
-            </Button>
-            <ButtonCategoryName isActive={category === "Finance"}>
-              Finance
-            </ButtonCategoryName>
-          </ButtonContainer>
-          <ButtonContainer>
-            <Button
-              onClick={() => updateButtonState("Spirituality")}
-              isActive={category === "Spirituality"}
-            >
-              <Img
-                style={{ borderRadius: "50%" }}
-                fluid={data.allFile.nodes[4].childrenImageSharp[0].fluid}
-              />
-            </Button>
-            <ButtonCategoryName isActive={category === "Spirituality"}>
-              Spirituality
-            </ButtonCategoryName>
-          </ButtonContainer>
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={0}
+            className="mySwiper"
+            style={{
+              maxWidth: "100%",
+              margin: "0 0 0 16px",
+            }}
+          >
+            {buttonArray.map((button, index) => (
+              <SwiperSlide key={index}>
+                <CategoryButton
+                  category={category}
+                  categoryName={getNameFromSrc(
+                    button.childrenImageSharp[0].fluid.src
+                  )}
+                  updateButtonState={updateButtonState}
+                  imgRef={button.childrenImageSharp[0].fluid}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </CategoryButtons>
       </CategoryContainer>
     </>
