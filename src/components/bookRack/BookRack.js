@@ -15,7 +15,17 @@ export function BookRack() {
   const booksData = JSON.parse(JSON.stringify(BOOKS_DATA));
   const data = useStaticQuery(graphql`
     query GetBooksRack1 {
-      allFile(filter: { sourceInstanceName: { eq: "businessRack1" } }) {
+      rack1: allFile(filter: { sourceInstanceName: { eq: "businessRack1" } }) {
+        nodes {
+          childrenImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+
+      rack2: allFile(filter: { sourceInstanceName: { eq: "businessRack2" } }) {
         nodes {
           childrenImageSharp {
             fluid {
@@ -40,9 +50,9 @@ export function BookRack() {
             return (
               <SwiperSlide key={book.id}>
                 <BookCard
-                  image={data.allFile.nodes[index].childrenImageSharp[0].fluid}
+                  image={data.rack1.nodes[index].childrenImageSharp[0].fluid}
                   title={getNameFromSrc(
-                    data.allFile.nodes[index].childrenImageSharp[0].fluid.src
+                    data.rack1.nodes[index].childrenImageSharp[0].fluid.src
                   )}
                   author={book.author}
                 />
@@ -59,16 +69,16 @@ export function BookRack() {
           {booksData.map((book, index) => (
             <SwiperSlide key={book.id}>
               <BookCard
-                image={data.allFile.nodes[index].childrenImageSharp[0].fluid}
+                image={data.rack1.nodes[index].childrenImageSharp[0].fluid}
                 title={getNameFromSrc(
-                  data.allFile.nodes[index].childrenImageSharp[0].fluid.src
+                  data.rack1.nodes[index].childrenImageSharp[0].fluid.src
                 )}
                 author={book.author}
               />
             </SwiperSlide>
           ))}
         </Swiper>
-        <Swiper
+        {/* <Swiper
           slidesPerView={2.5}
           spaceBetween={0}
           className="mySwiper"
@@ -85,7 +95,7 @@ export function BookRack() {
               />
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
       </RackContainer>
     </>
   );

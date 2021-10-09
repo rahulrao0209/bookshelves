@@ -1,10 +1,10 @@
 import React from "react";
 import { AppBar, Title } from ".";
 
-export function AppBarContainer({ children, ...restProps }) {
+export function AppBarContainer({ children }) {
   return (
     <>
-      <AppBar {...restProps}>
+      <AppBar>
         <Title>Bookshelves</Title>
       </AppBar>
     </>
