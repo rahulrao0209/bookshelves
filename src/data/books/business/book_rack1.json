@@ -3,48 +3,56 @@
     "id": 1,
     "title": "Linchpin",
     "author": "Seth Godin",
-    "rating": "4.8"
+    "rating": "4.8",
+    "image": "../../../images/business/businessRack1/linchpin.jpg"
   },
   {
     "id": 2,
     "title": "Funding Your Startup",
     "author": "Dhruv Nath & Sushanto Mitra",
-    "rating": "4.8"
+    "rating": "4.8",
+    "image": "../../../images/business/businessRack1/funding-your-startup.jpg"
   },
   {
     "id": 3,
     "title": "Good to Great",
     "author": "Jim Collins",
-    "rating": "4.7"
+    "rating": "4.7",
+    "image": "../../../images/business/businessRack1/good-to-great.jpg"
   },
   {
     "id": 4,
     "title": "Rework",
     "author": "Jason Fried & David Heinemeir",
-    "rating": "5.0"
+    "rating": "5.0",
+    "image": "../../../images/business/businessRack1/rework.jpg"
   },
   {
     "id": 5,
     "title": "Business Adventures",
     "author": "John Brooks",
-    "rating": "4.7"
+    "rating": "4.7",
+    "image": "../../../images/business/businessRack1/business-adventures.jpg"
   },
   {
     "id": 6,
     "title": "The Personal MBA",
     "author": "Josh Kauffman",
-    "rating": "4.8"
+    "rating": "4.8",
+    "image": "../../../images/business/businessRack1/personal-mba.jpg"
   },
   {
     "id": 7,
     "title": "The Four",
     "author": "Scott Galloway",
-    "rating": "4.7"
+    "rating": "4.7",
+    "image": "../../../images/business/businessRack1/the-four.jpg"
   },
   {
     "id": 8,
     "title": "How I Built This",
     "author": "Guy Raz",
-    "rating": "4.9"
+    "rating": "4.9",
+    "image": "../../../images/business/businessRack1/how-i-built-this.jpg"
   }
 ]

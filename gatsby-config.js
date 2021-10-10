@@ -11,15 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `businessRack2`,
-        path: `${__dirname}/src/images/business/businessRack2`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `businessRack1`,
-        path: `${__dirname}/src/images/business/businessRack1`,
+        name: `business`,
+        path: `${__dirname}/src/images/business`,
       },
     },
     {
@@ -27,6 +20,13 @@ module.exports = {
       options: {
         name: `categoryBar`,
         path: `${__dirname}/src/images/categoryBar`,
+      },
+    },
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data/`,
       },
     },
     // {
