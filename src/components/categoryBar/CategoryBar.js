@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export function CategoryBar({ category, assignNewCategory }) {
   const data = useStaticQuery(graphql`
     query GetCategoryImages {
-      allFile(filter: { sourceInstanceName: { eq: "bottomNavbar" } }) {
+      allFile(filter: { sourceInstanceName: { eq: "categoryBar" } }) {
         nodes {
           childrenImageSharp {
             fluid {

@@ -5,16 +5,21 @@ import SwiperCore, { Pagination } from "swiper";
 import { RackContainer } from ".";
 import { BookCard } from "../bookCard/BookCard";
 import { getNameFromSrc } from "../../../utils/getNameFromSrc";
-import BOOKS_DATA from "../../BOOKS_DATA.json";
 import "swiper/css";
 import "swiper/css/pagination";
+
+// Import data
+import book_rack1 from "../../data/books/business/book_rack1.json";
+import book_rack2 from "../../data/books/business/book_rack2.json";
 
 SwiperCore.use([Pagination]);
 
 export function BookRack() {
-  const booksData = JSON.parse(JSON.stringify(BOOKS_DATA));
+  const booksData1 = JSON.parse(JSON.stringify(book_rack1));
+  const booksData2 = JSON.parse(JSON.stringify(book_rack2));
+
   const data = useStaticQuery(graphql`
-    query GetBooksRack1 {
+    query GetBooks {
       rack1: allFile(filter: { sourceInstanceName: { eq: "businessRack1" } }) {
         nodes {
           childrenImageSharp {
@@ -46,7 +51,7 @@ export function BookRack() {
           className="mySwiper"
           style={{ maxWidth: "100vw" }}
         >
-          {booksData.map((book, index) => {
+          {booksData1.map((book, index) => {
             return (
               <SwiperSlide key={book.id}>
                 <BookCard
@@ -66,12 +71,12 @@ export function BookRack() {
           className="mySwiper"
           style={{ maxWidth: "100vw" }}
         >
-          {booksData.map((book, index) => (
+          {booksData2.map((book, index) => (
             <SwiperSlide key={book.id}>
               <BookCard
-                image={data.rack1.nodes[index].childrenImageSharp[0].fluid}
+                image={data.rack2.nodes[index].childrenImageSharp[0].fluid}
                 title={getNameFromSrc(
-                  data.rack1.nodes[index].childrenImageSharp[0].fluid.src
+                  data.rack2.nodes[index].childrenImageSharp[0].fluid.src
                 )}
                 author={book.author}
               />

@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `bottomNavbar`,
-        path: `${__dirname}/src/images/bottomNavbar`,
+        name: `categoryBar`,
+        path: `${__dirname}/src/images/categoryBar`,
       },
     },
     // {
