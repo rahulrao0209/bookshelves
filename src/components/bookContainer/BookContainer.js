@@ -1,10 +1,10 @@
 import React from "react";
 import { BookRack } from "../bookRack/BookRack";
 
-export function BookContainer() {
+export function BookContainer({ category }) {
   return (
     <>
-      <BookRack />
+      <BookRack category={category} />
     </>
   );
 }

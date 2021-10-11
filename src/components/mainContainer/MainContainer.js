@@ -7,7 +7,7 @@ export function MainContainer({ category }) {
     <>
       <Title>Bookshelves</Title>
       <BookCategory>{category}</BookCategory>
-      <BookContainer />
+      <BookContainer category={category} />
     </>
   );
 }

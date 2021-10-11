@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "A Random Walk Down Wall Street",
+    "author": "Burton G Malkiel",
+    "rating": "4.8",
+    "image": "../../../images/finance/financeRack1/a-random-walk-down-wall-street.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "rating": "5.0",
+    "image": "../../../images/finance/financeRack1/rich-dad-poor-dad.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Saving Capitalism From Capitalists",
+    "author": "Raghuram Rajan",
+    "rating": "4.7",
+    "image": "../../../images/finance/financeRack1/saving-capitalism.jpg"
+  }
+]

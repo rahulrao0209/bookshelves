@@ -9,10 +9,12 @@ import "swiper/css/pagination";
 
 SwiperCore.use([Pagination]);
 
-export function BookRack() {
+export function BookRack({ category }) {
+  // const queryRoot = `all${category}BookRack1Json`;
+
   const data = useStaticQuery(graphql`
     query GetBooks {
-      allBookRack1Json {
+      allBusinessBookRack1Json {
         nodes {
           author
           id
@@ -28,7 +30,7 @@ export function BookRack() {
         }
       }
 
-      allBookRack2Json {
+      allBusinessBookRack2Json {
         nodes {
           author
           id
@@ -46,8 +48,8 @@ export function BookRack() {
     }
   `);
 
-  const bookDataArray1 = data.allBookRack1Json.nodes;
-  const bookDataArray2 = data.allBookRack2Json.nodes;
+  const bookDataArray1 = data.allBusinessBookRack1Json.nodes;
+  const bookDataArray2 = data.allBusinessBookRack2Json.nodes;
 
   return (
     <>
