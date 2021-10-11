@@ -18,7 +18,7 @@ export const Card = styled.div`
 
 export const Title = styled.p`
   font-weight: 1000;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
 `;
 
