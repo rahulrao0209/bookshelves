@@ -98,6 +98,54 @@ export const useQueryAllBookData = () => {
           }
         }
       }
+
+      allPsychologyBookRack1Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+
+      allPsychologyBookRack2Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+
+      allPsychologyBookRack3Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
     }
   `);
 

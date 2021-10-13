@@ -25,6 +25,11 @@ function getBooksByCategory(category, allBookData) {
       bookDataArray2 = allBookData.allFinanceBookRack2Json.nodes;
       bookDataArray3 = allBookData.allFinanceBookRack3Json.nodes;
       return { bookDataArray1, bookDataArray2, bookDataArray3 };
+    case "Psychology":
+      bookDataArray1 = allBookData.allPsychologyBookRack1Json.nodes;
+      bookDataArray2 = allBookData.allPsychologyBookRack2Json.nodes;
+      bookDataArray3 = allBookData.allPsychologyBookRack3Json.nodes;
+      return { bookDataArray1, bookDataArray2, bookDataArray3 };
     default:
       return { bookDataArray1, bookDataArray2, bookDataArray3 };
   }
@@ -36,7 +41,7 @@ export function BookRack({ category }) {
     category,
     allBookData
   );
-
+  console.log("book data: ", allBookData);
   return (
     <>
       <RackContainer>
