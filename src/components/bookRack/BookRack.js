@@ -12,33 +12,30 @@ SwiperCore.use([Pagination]);
 function getBooksByCategory(category, allBookData) {
   let bookDataArray1 = [];
   let bookDataArray2 = [];
+  let bookDataArray3 = [];
 
   switch (category) {
     case "Business":
       bookDataArray1 = allBookData.allBusinessBookRack1Json.nodes;
       bookDataArray2 = allBookData.allBusinessBookRack2Json.nodes;
-      return { bookDataArray1, bookDataArray2 };
+      bookDataArray3 = allBookData.allBusinessBookRack3Json.nodes;
+      return { bookDataArray1, bookDataArray2, bookDataArray3 };
     case "Finance":
       bookDataArray1 = allBookData.allFinanceBookRack1Json.nodes;
       bookDataArray2 = allBookData.allFinanceBookRack2Json.nodes;
-      return { bookDataArray1, bookDataArray2 };
+      bookDataArray3 = allBookData.allFinanceBookRack3Json.nodes;
+      return { bookDataArray1, bookDataArray2, bookDataArray3 };
     default:
-      return { bookDataArray1, bookDataArray2 };
+      return { bookDataArray1, bookDataArray2, bookDataArray3 };
   }
 }
 
 export function BookRack({ category }) {
   const allBookData = useQueryAllBookData();
-  let { bookDataArray1, bookDataArray2 } = getBooksByCategory(
+  let { bookDataArray1, bookDataArray2, bookDataArray3 } = getBooksByCategory(
     category,
     allBookData
   );
-  // console.log(category);
-  console.log(bookDataArray1);
-  console.log(bookDataArray2);
-  // const bookDataArray1 = allBookData.allBusinessBookRack1Json.nodes;
-  // const bookDataArray2 = allBookData.allBusinessBookRack2Json.nodes;
-  // const bookDataArray3 = allBookData.allFinanceBookRack1Json.nodes;
 
   return (
     <>
@@ -77,24 +74,22 @@ export function BookRack({ category }) {
             </SwiperSlide>
           ))}
         </Swiper>
-        {/* <Swiper
+        <Swiper
           slidesPerView={2.5}
           spaceBetween={0}
           className="mySwiper"
           style={{ maxWidth: "100vw" }}
         >
-          {booksData.map((book, index) => (
+          {bookDataArray3.map((book) => (
             <SwiperSlide key={book.id}>
               <BookCard
-                image={data.allFile.nodes[index].childrenImageSharp[0].fluid}
-                title={getNameFromSrc(
-                  data.allFile.nodes[index].childrenImageSharp[0].fluid.src
-                )}
+                image={book.image.childImageSharp.fluid}
+                title={book.title}
                 author={book.author}
               />
             </SwiperSlide>
           ))}
-        </Swiper> */}
+        </Swiper>
       </RackContainer>
     </>
   );

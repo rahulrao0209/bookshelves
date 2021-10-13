@@ -1,0 +1,37 @@
+[
+  {
+    "id": 13,
+    "title": "Amazon Unbound",
+    "author": "Brad Stone",
+    "rating": "4.9",
+    "image": "../../../images/business/businessRack3/amazon-unbound.jpg"
+  },
+  {
+    "id": 14,
+    "title": "No Rules Rules: Netflix and Culture of Reinvention",
+    "author": "Reed Hastings & Erin Meyer",
+    "rating": "5.0",
+    "image": "../../../images/business/businessRack3/no-rules-rules.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Hooked: How to build habit forming products",
+    "author": "Nir Eyal",
+    "rating": "4.7",
+    "image": "../../../images/business/businessRack3/hooked.jpg"
+  },
+  {
+    "id": 16,
+    "title": "The Hard Thing about Hard Things",
+    "author": "Ben Horowitz",
+    "rating": "5.0",
+    "image": "../../../images/business/businessRack3/the-hard-thing-about-hard-things.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Trillion Dollar Coach",
+    "author": "Eric Schmidt & Jonathan Rosenberg",
+    "rating": "5.0",
+    "image": "../../../images/business/businessRack3/trillion-dollar-coach.jpg"
+  }
+]

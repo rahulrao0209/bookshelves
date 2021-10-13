@@ -35,6 +35,22 @@ export const useQueryAllBookData = () => {
         }
       }
 
+      allBusinessBookRack3Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+
       allFinanceBookRack1Json {
         nodes {
           author
@@ -52,6 +68,22 @@ export const useQueryAllBookData = () => {
       }
 
       allFinanceBookRack2Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+
+      allFinanceBookRack3Json {
         nodes {
           author
           id
