@@ -1,55 +1,44 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import { RackContainer } from ".";
 import { BookCard } from "../bookCard/BookCard";
 import "swiper/css";
 import "swiper/css/pagination";
+import { useQueryAllBookData } from "../../hooks/useQueryAllBookData";
 
 SwiperCore.use([Pagination]);
 
+function getBooksByCategory(category, allBookData) {
+  let bookDataArray1 = [];
+  let bookDataArray2 = [];
+
+  switch (category) {
+    case "Business":
+      bookDataArray1 = allBookData.allBusinessBookRack1Json.nodes;
+      bookDataArray2 = allBookData.allBusinessBookRack2Json.nodes;
+      return { bookDataArray1, bookDataArray2 };
+    case "Finance":
+      bookDataArray1 = allBookData.allFinanceBookRack1Json.nodes;
+      bookDataArray2 = allBookData.allFinanceBookRack2Json.nodes;
+      return { bookDataArray1, bookDataArray2 };
+    default:
+      return { bookDataArray1, bookDataArray2 };
+  }
+}
+
 export function BookRack({ category }) {
-  // const queryRoot = `all${category}BookRack1Json`;
-
-  const data = useStaticQuery(graphql`
-    query GetBooks {
-      allBusinessBookRack1Json {
-        nodes {
-          author
-          id
-          rating
-          title
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-
-      allBusinessBookRack2Json {
-        nodes {
-          author
-          id
-          rating
-          title
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
-
-  const bookDataArray1 = data.allBusinessBookRack1Json.nodes;
-  const bookDataArray2 = data.allBusinessBookRack2Json.nodes;
+  const allBookData = useQueryAllBookData();
+  let { bookDataArray1, bookDataArray2 } = getBooksByCategory(
+    category,
+    allBookData
+  );
+  // console.log(category);
+  console.log(bookDataArray1);
+  console.log(bookDataArray2);
+  // const bookDataArray1 = allBookData.allBusinessBookRack1Json.nodes;
+  // const bookDataArray2 = allBookData.allBusinessBookRack2Json.nodes;
+  // const bookDataArray3 = allBookData.allFinanceBookRack1Json.nodes;
 
   return (
     <>
