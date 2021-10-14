@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Algorithms to Live By",
+    "author": "Brian Christian and Tom Griffiths",
+    "rating": "5.0",
+    "image": "../../../images/innovation/innovationRack1/algorithms-to-live-by.jpg"
+  },
+  {
+    "id": 2,
+    "title": "A Mind At Play",
+    "author": "Jimmy Soni and Rob Goodman",
+    "rating": "5.0",
+    "image": "../../../images/innovation/innovationRack1/a-mind-at-play.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Think Like A Rocket Scientist",
+    "author": "Daniel H. Pink",
+    "rating": "5.0",
+    "image": "../../../images/innovation/innovationRack1/think-like-a-rocket-scientist.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Cracked It",
+    "author": "Bernard Garett, Corey Phelps, Oliver Sibony",
+    "rating": "4.7",
+    "image": "../../../images/innovation/innovationRack1/cracked-it.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Innovators",
+    "author": "Walter Issacson",
+    "rating": "4.9",
+    "image": "../../../images/innovation/innovationRack1/innovators.jpg"
+  }
+]

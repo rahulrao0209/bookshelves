@@ -29,6 +29,13 @@ module.exports = {
         path: `${__dirname}/src/images/psychology`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `innovation`,
+        path: `${__dirname}/src/images/innovation`,
+      },
+    },
     // {
     //   resolve: `gatsby-source-filesystem`,
     //   options: {

@@ -146,6 +146,54 @@ export const useQueryAllBookData = () => {
           }
         }
       }
+
+      allInnovationBookRack1Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+
+      allInnovationBookRack2Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+
+      allInnovationBookRack3Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
     }
   `);
 

@@ -30,6 +30,11 @@ function getBooksByCategory(category, allBookData) {
       bookDataArray2 = allBookData.allPsychologyBookRack2Json.nodes;
       bookDataArray3 = allBookData.allPsychologyBookRack3Json.nodes;
       return { bookDataArray1, bookDataArray2, bookDataArray3 };
+    case "Innovation":
+      bookDataArray1 = allBookData.allInnovationBookRack1Json.nodes;
+      bookDataArray2 = allBookData.allInnovationBookRack2Json.nodes;
+      bookDataArray3 = allBookData.allInnovationBookRack3Json.nodes;
+      return { bookDataArray1, bookDataArray2, bookDataArray3 };
     default:
       return { bookDataArray1, bookDataArray2, bookDataArray3 };
   }
