@@ -194,6 +194,54 @@ export const useQueryAllBookData = () => {
           }
         }
       }
+
+      allSpiritualityBookRack1Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+
+      allSpiritualityBookRack2Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+
+      allSpiritualityBookRack3Json {
+        nodes {
+          author
+          id
+          rating
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
     }
   `);
 

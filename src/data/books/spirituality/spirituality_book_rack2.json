@@ -1,0 +1,37 @@
+[
+  {
+    "id": 6,
+    "title": "Ramayana",
+    "author": "Krishna Dharma",
+    "rating": "5.0",
+    "image": "../../../images/spirituality/ramayana.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Midnights With The Mystic",
+    "author": "Cheryl Simone",
+    "rating": "4.8",
+    "image": "../../../images/spirituality/midnights-with-the-mystic.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Don't Polish Your Ignorance",
+    "author": "Sadhguru",
+    "rating": "4.9",
+    "image": "../../../images/spirituality/dont-polish-your-ignorance.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Autobiography Of A Yogi",
+    "author": "Paramahansa Yogananda",
+    "rating": "4.8",
+    "image": "../../../images/spirituality/autobiography-of-a-yogi.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Mystical Tales For A Magical Life",
+    "author": "Shubha Vilas",
+    "rating": "4.9",
+    "image": "../../../images/spirituality/mystical-tales-for-a-magical-life.jpg"
+  }
+]

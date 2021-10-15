@@ -32,6 +32,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `spirituality`,
+        path: `${__dirname}/src/images/spirituality`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `innovation`,
         path: `${__dirname}/src/images/innovation`,
       },

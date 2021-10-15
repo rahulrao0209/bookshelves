@@ -24,6 +24,11 @@ export function getBooksByCategory(category, allBookData) {
       bookDataArray2 = allBookData.allInnovationBookRack2Json.nodes;
       bookDataArray3 = allBookData.allInnovationBookRack3Json.nodes;
       return { bookDataArray1, bookDataArray2, bookDataArray3 };
+    case "Spirituality":
+      bookDataArray1 = allBookData.allSpiritualityBookRack1Json.nodes;
+      bookDataArray2 = allBookData.allSpiritualityBookRack2Json.nodes;
+      bookDataArray3 = allBookData.allSpiritualityBookRack3Json.nodes;
+      return { bookDataArray1, bookDataArray2, bookDataArray3 };
     default:
       return { bookDataArray1, bookDataArray2, bookDataArray3 };
   }

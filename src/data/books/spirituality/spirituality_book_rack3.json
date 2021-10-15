@@ -1,0 +1,37 @@
+[
+  {
+    "id": 11,
+    "title": "Death: An Inside Story",
+    "author": "Sadhguru",
+    "rating": "4.9",
+    "image": "../../../images/spirituality/death-an-inside-story.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Himalayan Lust",
+    "author": "Sadhguru",
+    "rating": "4.9",
+    "image": "../../../images/spirituality/himalayan-lust.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Ikigai",
+    "author": "Hector Garcia and Francesc Miralles",
+    "rating": "4.8",
+    "image": "../../../images/spirituality/ikigai.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Life's Amazing Secrets",
+    "author": "Gaur Gopal Das",
+    "rating": "4.8",
+    "image": "../../../images/spirituality/lifes-amazing-secrets.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Mind Full To Mindful",
+    "author": "Om Swami",
+    "rating": "4.9",
+    "image": "../../../images/spirituality/mind-full-to-mindful.jpg"
+  }
+]

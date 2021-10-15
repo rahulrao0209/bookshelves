@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "title": "Adiyogi",
+    "author": "Sadhguru",
+    "rating": "5.0",
+    "image": "../../../images/spirituality/adiyogi.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Karma",
+    "author": "Sadhguru",
+    "rating": "5.0",
+    "image": "../../../images/spirituality/karma-sadhguru.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Inner Engineering",
+    "author": "Sadhguru",
+    "rating": "5.0",
+    "image": "../../../images/spirituality/inner-engineering.jpg"
+  },
+  {
+    "id": 4,
+    "title": "A Million Thoughts",
+    "author": "Om Swami",
+    "rating": "4.8",
+    "image": "../../../images/spirituality/a-million-thoughts.jpg"
+  },
+  {
+    "id": 5,
+    "title": "A Taste Of Wellbeing",
+    "author": "Sadhguru",
+    "rating": "4.9",
+    "image": "../../../images/spirituality/a-taste-of-wellbeing.jpg"
+  }
+]
