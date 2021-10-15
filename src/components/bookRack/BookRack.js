@@ -16,7 +16,7 @@ export function BookRack({ category }) {
     category,
     allBookData
   );
-  console.log("book data: ", allBookData);
+
   return (
     <>
       <RackContainer>
