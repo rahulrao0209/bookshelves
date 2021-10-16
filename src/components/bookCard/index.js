@@ -1,5 +1,4 @@
 import styled from "styled-components/macro";
-// import Img from "gatsby-image";
 import "@fontsource/poppins";
 
 export const Card = styled.div`
@@ -9,12 +8,12 @@ export const Card = styled.div`
   align-items: center;
   margin: 16px 0;
   justify-content: center;
-`;
+  transition: transform 1s ease;
 
-// export const Image = styled(Img)`
-//   min-width: 174px;
-//   min-height: 280px;
-// `;
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
 
 export const Title = styled.p`
   font-weight: 1000;
