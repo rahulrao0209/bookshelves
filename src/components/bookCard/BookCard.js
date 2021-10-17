@@ -1,8 +1,8 @@
 import React from "react";
 import Img from "gatsby-image";
-import { Card, Title, Author } from ".";
-
-export function BookCard({ image, title, author }) {
+import { Card, Title, Author, Rating } from ".";
+import { BsStarFill, BsStarHalf } from "react-icons/bs";
+export function BookCard({ image, title, author, rating }) {
   return (
     <>
       <Card>
@@ -15,6 +15,15 @@ export function BookCard({ image, title, author }) {
           }}
           fluid={image}
         />
+        {Number(rating) >= 4.9 ? (
+          <Rating>
+            <BsStarFill color="FFC700" /> {rating}
+          </Rating>
+        ) : (
+          <Rating>
+            <BsStarHalf color="FFC700" /> {rating}
+          </Rating>
+        )}
         <Author>{author}</Author>
         <Title>{title}</Title>
       </Card>

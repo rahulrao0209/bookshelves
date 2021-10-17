@@ -24,5 +24,9 @@ export const Title = styled.p`
 export const Author = styled.p`
   text-align: center;
   font-size: 12px;
+  margin: 2px 0 0 0;
+`;
+
+export const Rating = styled(Title)`
   margin: 8px 0 0 0;
 `;

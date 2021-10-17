@@ -21,6 +21,7 @@ export function MySwiper({ bookDataArray }) {
             image={book.image.childImageSharp.fluid}
             title={book.title}
             author={book.author}
+            rating={book.rating}
           />
         </SwiperSlide>
       ))}
