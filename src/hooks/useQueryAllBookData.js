@@ -194,7 +194,7 @@ export const useQueryAllBookData = () => {
           }
         }
       }
-
+      
       allSpiritualityBookRack1Json {
         nodes {
           author
@@ -227,7 +227,7 @@ export const useQueryAllBookData = () => {
         }
       }
 
-      allSpiritualityBookRack3Json {
+       allSpiritualityBookRack3Json {
         nodes {
           author
           id

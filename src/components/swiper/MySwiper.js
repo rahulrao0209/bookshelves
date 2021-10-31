@@ -8,6 +8,10 @@ import "swiper/css/pagination";
 SwiperCore.use([Pagination]);
 
 export function MySwiper({ bookDataArray }) {
+  const handleClick = (book) => {
+    console.log("Clicked on ", book.title);
+  };
+
   return (
     <Swiper
       slidesPerView={2.5}
@@ -16,7 +20,7 @@ export function MySwiper({ bookDataArray }) {
       style={{ maxWidth: "100vw" }}
     >
       {bookDataArray.map((book) => (
-        <SwiperSlide key={book.id}>
+        <SwiperSlide key={book.id} onClick={() => handleClick(book)}>
           <BookCard
             image={book.image.childImageSharp.fluid}
             title={book.title}

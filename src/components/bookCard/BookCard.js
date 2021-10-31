@@ -2,6 +2,7 @@ import React from "react";
 import Img from "gatsby-image";
 import { Card, Title, Author, Rating } from ".";
 import { BsStarFill, BsStarHalf } from "react-icons/bs";
+
 export function BookCard({ image, title, author, rating }) {
   return (
     <>
