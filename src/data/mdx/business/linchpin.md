@@ -1,6 +1,7 @@
 ---
 title: Linchpin
 slug: linchpin
+bookImage: "../../../images/business/businessRack1/linchpin.jpg"
 publisher: RHUK
 pages: 288
 language: English
