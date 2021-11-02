@@ -1,5 +1,8 @@
 import styled from "styled-components/macro";
 import "@fontsource/poppins";
+import "@fontsource/poppins/700.css";
+import "@fontsource/open-sans";
+import "@fontsource/open-sans/600.css";
 
 export const DetailsPage = styled.div`
   display: flex;
@@ -32,10 +35,38 @@ export const Title = styled.p`
   background: transparent;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
-  font-weight: bolder;
+  font-weight: 700;
 `;
 
 export const Details = styled.p`
-  margin: 30px 0 0 0;
+  margin: 0 auto;
+  padding: 8px;
+  width: 90%;
   color: black;
+  opacity: 0.68;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+`;
+
+export const Description = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 32px auto 0 auto;
+  padding: 0 8px;
+  width: 90%;
+`;
+
+export const Text = styled.p`
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+`;
+
+export const Price = styled.p`
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  color: #000000;
+  opacity: 0.5;
 `;

@@ -1,16 +1,26 @@
 import React from "react";
 import Img from "gatsby-image";
 import { Layout } from "../components/layout/Layout";
-import { Title, Overview, Details, PageControls, DetailsPage } from ".";
+import {
+  Title,
+  Overview,
+  Details,
+  Description,
+  Text,
+  Price,
+  PageControls,
+  DetailsPage,
+} from ".";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import { FiHeart } from "react-icons/fi";
 import { graphql } from "gatsby";
 import { GlobalStyle } from "../globalStyle/globalStyle";
 
 export default function BookDetails({ data }) {
-  const { rawBody } = data.mdx;
-  const { title } = data.mdx.frontmatter;
-  const bkImage = data.mdx.frontmatter.bookImage.childImageSharp.fluid;
+  const { html } = data.markdownRemark;
+  const { title } = data.markdownRemark.frontmatter;
+  const bkImage =
+    data.markdownRemark.frontmatter.bookImage.childImageSharp.fluid;
   const pageControlStyles = {
     background: "transparent",
     width: "30px",
@@ -39,7 +49,11 @@ export default function BookDetails({ data }) {
           />
           <Title>{title}</Title>
         </Overview>
-        <Details>{rawBody}</Details>
+        <Description>
+          <Text>Description</Text>
+          <Price>Rs. 450</Price>
+        </Description>
+        <Details dangerouslySetInnerHTML={{ __html: html }} />
       </DetailsPage>
     </Layout>
   );
@@ -47,8 +61,8 @@ export default function BookDetails({ data }) {
 
 export const query = graphql`
   query DetailsPage($slug: String) {
-    mdx(frontmatter: { slug: { eq: $slug } }) {
-      rawBody
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      html
       frontmatter {
         title
         bookImage {
