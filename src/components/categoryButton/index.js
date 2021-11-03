@@ -21,6 +21,7 @@ export const ButtonContainer = styled.div`
 export const ButtonCategoryName = styled.p`
   margin: 8px 0 0 0;
   font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   font-size: 13px;
   text-align: center;
   color: ${(props) => (props.isActive ? "#02255a" : "#275cab")};

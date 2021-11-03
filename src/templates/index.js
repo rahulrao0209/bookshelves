@@ -13,6 +13,7 @@ export const DetailsPage = styled.div`
 export const Overview = styled.div`
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-around;
   align-items: center;
   min-height: 400px;
   width: 90%;
@@ -31,7 +32,7 @@ export const PageControls = styled.div`
 `;
 
 export const Title = styled.p`
-  margin: 8px 0 16px 0;
+  margin: 8px 0 0 0;
   background: transparent;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
@@ -53,7 +54,7 @@ export const Description = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin: 32px auto 0 auto;
+  margin: 32px auto 8px auto;
   padding: 0 8px;
   width: 90%;
 `;
@@ -65,8 +66,27 @@ export const Text = styled.p`
 `;
 
 export const Price = styled.p`
+  margin: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   color: #000000;
   opacity: 0.5;
+`;
+
+export const Author = styled.p`
+  margin: 2px 0 8px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  color: #000000;
+  opacity: 0.8;
+  background: transparent;
+`;
+
+export const Rated = styled.div`
+  margin: 16px 0;
+  text-align: center;
+  background: transparent;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 `;

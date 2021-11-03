@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper";
 import { BookCard } from "../bookCard/BookCard";
@@ -21,12 +22,17 @@ export function MySwiper({ bookDataArray }) {
     >
       {bookDataArray.map((book) => (
         <SwiperSlide key={book.id} onClick={() => handleClick(book)}>
-          <BookCard
-            image={book.image.childImageSharp.fluid}
-            title={book.title}
-            author={book.author}
-            rating={book.rating}
-          />
+          <Link
+            style={{ textDecoration: "none", color: "#000000" }}
+            to="/details/rework"
+          >
+            <BookCard
+              image={book.image.childImageSharp.fluid}
+              title={book.title}
+              author={book.author}
+              rating={book.rating}
+            />
+          </Link>
         </SwiperSlide>
       ))}
     </Swiper>

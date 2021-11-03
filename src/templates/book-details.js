@@ -8,9 +8,12 @@ import {
   Description,
   Text,
   Price,
+  Author,
+  Rated,
   PageControls,
   DetailsPage,
 } from ".";
+import { FiveStars, FourAndHalfStars } from "../components/rating/Rating";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import { FiHeart } from "react-icons/fi";
 import { graphql } from "gatsby";
@@ -18,7 +21,7 @@ import { GlobalStyle } from "../globalStyle/globalStyle";
 
 export default function BookDetails({ data }) {
   const { html } = data.markdownRemark;
-  const { title } = data.markdownRemark.frontmatter;
+  const { title, price, author, rating } = data.markdownRemark.frontmatter;
   const bkImage =
     data.markdownRemark.frontmatter.bookImage.childImageSharp.fluid;
   const pageControlStyles = {
@@ -48,10 +51,22 @@ export default function BookDetails({ data }) {
             fluid={bkImage}
           />
           <Title>{title}</Title>
+          <Author>{author}</Author>
+          {Number(rating) >= 4.9 ? (
+            <Rated>
+              {rating}
+              <FiveStars />
+            </Rated>
+          ) : (
+            <Rated>
+              {rating}
+              <FourAndHalfStars />
+            </Rated>
+          )}
         </Overview>
         <Description>
           <Text>Description</Text>
-          <Price>Rs. 450</Price>
+          <Price>Rs. {price}</Price>
         </Description>
         <Details dangerouslySetInnerHTML={{ __html: html }} />
       </DetailsPage>
@@ -65,6 +80,9 @@ export const query = graphql`
       html
       frontmatter {
         title
+        author
+        price
+        rating
         bookImage {
           childImageSharp {
             fluid {
