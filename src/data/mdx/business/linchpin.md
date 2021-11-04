@@ -4,9 +4,9 @@ slug: linchpin
 bookImage: "../../../images/business/businessRack1/linchpin.jpg"
 price: "325"
 rating: "4.8"
-author: "Seth Godin"
-publisher: RHUK
-pages: 288
+author: Seth Godin
+publisher: Piatkus
+pages: 256
 language: English
 ---
 

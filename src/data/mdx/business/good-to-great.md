@@ -2,11 +2,11 @@
 title: Good To Great
 slug: good-to-great
 bookImage: "../../../images/business/businessRack1/good-to-great.jpg"
-price: "250"
+price: "835"
 rating: "4.7"
-author: "Jim Collins"
+author: Jim Collins
 publisher: RHUK
-pages: 288
+pages: 320
 language: English
 ---
 

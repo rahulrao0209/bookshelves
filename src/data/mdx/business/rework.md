@@ -4,7 +4,7 @@ slug: rework
 bookImage: "../../../images/business/businessRack1/rework.jpg"
 price: "450"
 rating: "5.0"
-author: "Jason Fried & David Heinemeir"
+author: Jason Fried & David Heinemeir
 publisher: RHUK
 pages: 288
 language: English
