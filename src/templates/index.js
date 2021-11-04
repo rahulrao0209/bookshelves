@@ -33,6 +33,7 @@ export const PageControls = styled.div`
 
 export const Title = styled.p`
   margin: 8px 0 0 0;
+  text-align: center;
   background: transparent;
   font-family: "Poppins", sans-serif;
   font-size: 24px;
