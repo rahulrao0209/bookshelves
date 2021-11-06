@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "A Random Walk Down Wall Street",
+    "author": "Burton G Malkiel",
+    "rating": "4.8",
+    "image": "../../../images/finance/financeRack1/a-random-walk-down-wallstreet.jpg",
+    "slug": "a-random-walk-down-wallstreet"
+  },
+  {
+    "id": 2,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "rating": "5.0",
+    "image": "../../../images/finance/financeRack1/rich-dad-poor-dad.jpg",
+    "slug": "rich-dad-poor-dad"
+  },
+  {
+    "id": 3,
+    "title": "Saving Capitalism From Capitalists",
+    "author": "Raghuram Rajan",
+    "rating": "4.7",
+    "image": "../../../images/finance/financeRack1/saving-capitalism.jpg",
+    "slug": "saving-capitalism"
+  },
+  {
+    "id": 4,
+    "title": "Zero Emi",
+    "author": "Ra. Ma. Palaniappan",
+    "rating": "4.8",
+    "image": "../../../images/finance/financeRack1/zero-emi.jpg",
+    "slug": "zero-emi"
+  },
+  {
+    "id": 5,
+    "title": "The Millionaire Fastlane",
+    "author": "MJ Demarco",
+    "rating": "4.9",
+    "image": "../../../images/finance/financeRack1/the-millionaire-fastlane.jpg",
+    "slug": "the-millionaire-fastlane"
+  }
+]

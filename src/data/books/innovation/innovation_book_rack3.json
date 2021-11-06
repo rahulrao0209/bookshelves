@@ -1,0 +1,42 @@
+[
+  {
+    "id": 11,
+    "title": "Building A Brand Story",
+    "author": "Donald Miller",
+    "rating": "5.0",
+    "image": "../../../images/innovation/innovationRack3/building-a-brand-story.jpg",
+    "slug": "building-a-brand-story"
+  },
+  {
+    "id": 12,
+    "title": "How Innovation Works",
+    "author": "Matt Ridley",
+    "rating": "4.8",
+    "image": "../../../images/innovation/innovationRack3/how-innovation-works.jpg",
+    "slug": "how-innovation-works"
+  },
+  {
+    "id": 13,
+    "title": "Made To Stick",
+    "author": "Chip and Dan Heath",
+    "rating": "4.8",
+    "image": "../../../images/innovation/innovationRack3/made-to-stick.jpg",
+    "slug": "made-to-stick"
+  },
+  {
+    "id": 14,
+    "title": "The Innovators Dilemma",
+    "author": "Clayton M. Christensen",
+    "rating": "4.9",
+    "image": "../../../images/innovation/innovationRack3/the-innovators-dilemma.jpg",
+    "slug": "the-innovators-dilemma"
+  },
+  {
+    "id": 15,
+    "title": "everybody-writes",
+    "author": "Ann Handley",
+    "rating": "4.8",
+    "image": "../../../images/innovation/innovationRack3/everybody-writes.jpg",
+    "slug": "everybody-writes"
+  }
+]

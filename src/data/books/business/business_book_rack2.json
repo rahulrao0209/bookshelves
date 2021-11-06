@@ -1,0 +1,34 @@
+[
+  {
+    "id": 9,
+    "title": "The Lean Startup",
+    "author": "Eric Ries",
+    "rating": "4.8",
+    "image": "../../../images/business/businessRack2/the-lean-startup.jpg",
+    "slug": "the-lean-startup"
+  },
+  {
+    "id": 10,
+    "title": "Working Backwards",
+    "author": "Jeff Bezos",
+    "rating": "4.8",
+    "image": "../../../images/business/businessRack2/working-backwards.jpg",
+    "slug": "working-backwards"
+  },
+  {
+    "id": 11,
+    "title": "Your Next Five Moves",
+    "author": "Jim Collins",
+    "rating": "4.7",
+    "image": "../../../images/business/businessRack2/your-next-five-moves.jpg",
+    "slug": "your-next-five-moves"
+  },
+  {
+    "id": 12,
+    "title": "Zero To One",
+    "author": "Peter Thiel",
+    "rating": "5.0",
+    "image": "../../../images/business/businessRack2/zero-to-one.jpg",
+    "slug": "zero-to-one"
+  }
+]

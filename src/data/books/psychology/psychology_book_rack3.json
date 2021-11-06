@@ -1,0 +1,42 @@
+[
+  {
+    "id": 10,
+    "title": "Fooled By Randomness",
+    "author": "Nassim Nicholas Taleb",
+    "rating": "5.0",
+    "image": "../../../images/psychology/psychologyRack3/fooled-by-randomness.jpg",
+    "slug": "fooled-by-randomness"
+  },
+  {
+    "id": 11,
+    "title": "The 48 Laws Of Power",
+    "author": "Robert Greene",
+    "rating": "4.9",
+    "image": "../../../images/psychology/psychologyRack3/laws-of-power.jpg",
+    "slug": "laws-of-power"
+  },
+  {
+    "id": 12,
+    "title": "Misbehaving",
+    "author": "Richard H. Thaler",
+    "rating": "4.9",
+    "image": "../../../images/psychology/psychologyRack3/misbehaving.jpg",
+    "slug": "misbehaving"
+  },
+  {
+    "id": 13,
+    "title": "Predictably Irrational",
+    "author": "Daniel Ariely",
+    "rating": "5.0",
+    "image": "../../../images/psychology/psychologyRack3/predictably-irrational.jpg",
+    "slug": "predictably-irrational"
+  },
+  {
+    "id": 14,
+    "title": "The Charisma Myth",
+    "author": "Olivia Fox Cabane",
+    "rating": "4.9",
+    "image": "../../../images/psychology/psychologyRack3/the-charisma-myth.jpg",
+    "slug": "the-charisma-myth"
+  }
+]
