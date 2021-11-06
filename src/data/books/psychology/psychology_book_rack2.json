@@ -4,27 +4,31 @@
     "title": "Mindset",
     "author": "Dr. Carol S. Dweck",
     "rating": "4.8",
-    "image": "../../../images/psychology/psychologyRack2/mindset.jpg"
+    "image": "../../../images/psychology/psychologyRack2/mindset.jpg",
+    "slug": "mindset"
   },
   {
     "id": 7,
     "title": "Nudge",
     "author": "Richard H. Thaler & Cass R. Sunstein",
     "rating": "4.9",
-    "image": "../../../images/psychology/psychologyRack2/nudge.jpg"
+    "image": "../../../images/psychology/psychologyRack2/nudge.jpg",
+    "slug": "nudge"
   },
   {
     "id": 8,
     "title": "The Power Of Your Subconscious Mind",
     "author": "Joseph Murphy",
     "rating": "4.7",
-    "image": "../../../images/psychology/psychologyRack2/the-power-of-subconscious-mind.jpg"
+    "image": "../../../images/psychology/psychologyRack2/the-power-of-subconscious-mind.jpg",
+    "slug": "the-power-of-subconscious-mind"
   },
   {
     "id": 9,
     "title": "Thinking Fast And Slow",
     "author": "Daneil Kahnemann",
     "rating": "5.0",
-    "image": "../../../images/psychology/psychologyRack2/thinking-fast-and-slow.jpg"
+    "image": "../../../images/psychology/psychologyRack2/thinking-fast-and-slow.jpg",
+    "slug": "thinking-fast-and-slow"
   }
 ]

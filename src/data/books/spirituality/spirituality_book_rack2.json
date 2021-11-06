@@ -4,34 +4,39 @@
     "title": "Ramayana",
     "author": "Krishna Dharma",
     "rating": "5.0",
-    "image": "../../../images/spirituality/ramayana.jpg"
+    "image": "../../../images/spirituality/ramayana.jpg",
+    "slug": "ramayana"
   },
   {
     "id": 7,
     "title": "Midnights With The Mystic",
     "author": "Cheryl Simone",
     "rating": "4.8",
-    "image": "../../../images/spirituality/midnights-with-the-mystic.jpg"
+    "image": "../../../images/spirituality/midnights-with-the-mystic.jpg",
+    "slug": "midnights-with-the-mystic"
   },
   {
     "id": 8,
     "title": "Don't Polish Your Ignorance",
     "author": "Sadhguru",
     "rating": "4.9",
-    "image": "../../../images/spirituality/dont-polish-your-ignorance.jpg"
+    "image": "../../../images/spirituality/dont-polish-your-ignorance.jpg",
+    "slug": "dont-polish-your-ignorance"
   },
   {
     "id": 9,
     "title": "Autobiography Of A Yogi",
     "author": "Paramahansa Yogananda",
     "rating": "4.8",
-    "image": "../../../images/spirituality/autobiography-of-a-yogi.jpg"
+    "image": "../../../images/spirituality/autobiography-of-a-yogi.jpg",
+    "slug": "autobiography-of-a-yogi"
   },
   {
     "id": 10,
     "title": "Mystical Tales For A Magical Life",
     "author": "Shubha Vilas",
     "rating": "4.9",
-    "image": "../../../images/spirituality/mystical-tales-for-a-magical-life.jpg"
+    "image": "../../../images/spirituality/mystical-tales-for-a-magical-life.jpg",
+    "slug": "mystical-tales-for-a-magical-life"
   }
 ]

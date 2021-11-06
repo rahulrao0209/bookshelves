@@ -16,6 +16,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -32,6 +33,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -48,6 +50,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -64,6 +67,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -80,6 +84,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -96,6 +101,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -112,6 +118,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -128,6 +135,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -144,6 +152,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -160,6 +169,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -176,6 +186,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -192,9 +203,10 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
-      
+
       allSpiritualityBookRack1Json {
         nodes {
           author
@@ -208,6 +220,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
@@ -224,10 +237,11 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
 
-       allSpiritualityBookRack3Json {
+      allSpiritualityBookRack3Json {
         nodes {
           author
           id
@@ -240,6 +254,7 @@ export const useQueryAllBookData = () => {
               }
             }
           }
+          slug
         }
       }
     }

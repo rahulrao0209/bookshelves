@@ -4,34 +4,39 @@
     "title": "Adiyogi",
     "author": "Sadhguru",
     "rating": "5.0",
-    "image": "../../../images/spirituality/adiyogi.jpg"
+    "image": "../../../images/spirituality/adiyogi.jpg",
+    "slug": "adiyogi"
   },
   {
     "id": 2,
     "title": "Karma",
     "author": "Sadhguru",
     "rating": "5.0",
-    "image": "../../../images/spirituality/karma-sadhguru.jpg"
+    "image": "../../../images/spirituality/karma-sadhguru.jpg",
+    "slug": "karma-sadhguru"
   },
   {
     "id": 3,
     "title": "Inner Engineering",
     "author": "Sadhguru",
     "rating": "5.0",
-    "image": "../../../images/spirituality/inner-engineering.jpg"
+    "image": "../../../images/spirituality/inner-engineering.jpg",
+    "slug": "inner-engineering"
   },
   {
     "id": 4,
     "title": "A Million Thoughts",
     "author": "Om Swami",
     "rating": "4.8",
-    "image": "../../../images/spirituality/a-million-thoughts.jpg"
+    "image": "../../../images/spirituality/a-million-thoughts.jpg",
+    "slug": "a-million-thoughts"
   },
   {
     "id": 5,
     "title": "A Taste Of Wellbeing",
     "author": "Sadhguru",
     "rating": "4.9",
-    "image": "../../../images/spirituality/a-taste-of-wellbeing.jpg"
+    "image": "../../../images/spirituality/a-taste-of-wellbeing.jpg",
+    "slug": "a-taste-of-wellbeing"
   }
 ]

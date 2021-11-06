@@ -4,34 +4,39 @@
     "title": "Bulls Bears and Other Beasts",
     "author": "Santosh Nair",
     "rating": "4.9",
-    "image": "../../../images/finance/financeRack2/bulls-bears-and-other-beasts.jpg"
+    "image": "../../../images/finance/financeRack2/bulls-bears-and-other-beasts.jpg",
+    "slug": "bulls-bears-and-other-beasts"
   },
   {
     "id": 7,
     "title": "Coffee Can Investing",
     "author": "Saurabh Mukherjee",
     "rating": "4.9",
-    "image": "../../../images/finance/financeRack2/coffee-can-investing.jpg"
+    "image": "../../../images/finance/financeRack2/coffee-can-investing.jpg",
+    "slug": "coffee-can-investing"
   },
   {
     "id": 8,
     "title": "Learn to Earn",
     "author": "Peter Lynch",
     "rating": "4.7",
-    "image": "../../../images/finance/financeRack2/learn-to-earn.jpg"
+    "image": "../../../images/finance/financeRack2/learn-to-earn.jpg",
+    "slug": "learn-to-earn"
   },
   {
     "id": 9,
     "title": "Richest Man In Babylon",
     "author": "George S. Clason",
     "rating": "4.8",
-    "image": "../../../images/finance/financeRack2/richest-man-in-babylon.jpg"
+    "image": "../../../images/finance/financeRack2/richest-man-in-babylon.jpg",
+    "slug": "richest-man-in-babylon"
   },
   {
     "id": 10,
     "title": "The Dhandho Investor",
     "author": "Monish Parbai",
     "rating": "4.9",
-    "image": "../../../images/finance/financeRack2/the-dhandho-investor.jpg"
+    "image": "../../../images/finance/financeRack2/the-dhandho-investor.jpg",
+    "slug": "the-dhandho-investor"
   }
 ]

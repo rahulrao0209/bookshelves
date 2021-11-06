@@ -4,34 +4,39 @@
     "title": "Atomic Habits",
     "author": "James Clear",
     "rating": "5.0",
-    "image": "../../../images/psychology/psychologyRack1/atomic-habits.jpg"
+    "image": "../../../images/psychology/psychologyRack1/atomic-habits.jpg",
+    "slug": "atomic-habits"
   },
   {
     "id": 2,
     "title": "Influence: The Psychology of Persuasion",
     "author": "Robert B. Cialdini",
     "rating": "4.9",
-    "image": "../../../images/psychology/psychologyRack1/influence-the-psychology-of-persuasion.jpg"
+    "image": "../../../images/psychology/psychologyRack1/influence-the-psychology-of-persuasion.jpg",
+    "slug": "influence-the-psychology-of-persuasion"
   },
   {
     "id": 3,
     "title": "Never Split The Difference",
     "author": "Chris Voss with Tahl Raz",
     "rating": "4.7",
-    "image": "../../../images/psychology/psychologyRack1/never-split-the-difference.jpg"
+    "image": "../../../images/psychology/psychologyRack1/never-split-the-difference.jpg",
+    "slug": "never-split-the-difference"
   },
   {
     "id": 4,
     "title": "The Leading Brain",
     "author": "Friederike Fabritius And Hans W. Hagemann",
     "rating": "5.0",
-    "image": "../../../images/psychology/psychologyRack1/the-leading-brain.jpg"
+    "image": "../../../images/psychology/psychologyRack1/the-leading-brain.jpg",
+    "slug": "the-leading-brain"
   },
   {
     "id": 5,
     "title": "The Marshmallow Test",
     "author": "Walter Mischel",
     "rating": "4.9",
-    "image": "../../../images/psychology/psychologyRack1/the-marshmallow-test.jpg"
+    "image": "../../../images/psychology/psychologyRack1/the-marshmallow-test.jpg",
+    "slug": "the-marshmallow-test"
   }
 ]

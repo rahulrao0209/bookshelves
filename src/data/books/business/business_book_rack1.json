@@ -4,55 +4,63 @@
     "title": "Linchpin",
     "author": "Seth Godin",
     "rating": "4.8",
-    "image": "../../../images/business/businessRack1/linchpin.jpg"
+    "image": "../../../images/business/businessRack1/linchpin.jpg",
+    "slug": "linchpin"
   },
   {
     "id": 2,
     "title": "Funding Your Startup",
     "author": "Dhruv Nath & Sushanto Mitra",
     "rating": "4.8",
-    "image": "../../../images/business/businessRack1/funding-your-startup.jpg"
+    "image": "../../../images/business/businessRack1/funding-your-startup.jpg",
+    "slug": "funding-your-startup"
   },
   {
     "id": 3,
     "title": "Good to Great",
     "author": "Jim Collins",
     "rating": "4.7",
-    "image": "../../../images/business/businessRack1/good-to-great.jpg"
+    "image": "../../../images/business/businessRack1/good-to-great.jpg",
+    "slug": "good-to-great"
   },
   {
     "id": 4,
     "title": "Rework",
     "author": "Jason Fried & David Heinemeir",
     "rating": "5.0",
-    "image": "../../../images/business/businessRack1/rework.jpg"
+    "image": "../../../images/business/businessRack1/rework.jpg",
+    "slug": "rework"
   },
   {
     "id": 5,
     "title": "Business Adventures",
     "author": "John Brooks",
     "rating": "4.7",
-    "image": "../../../images/business/businessRack1/business-adventures.jpg"
+    "image": "../../../images/business/businessRack1/business-adventures.jpg",
+    "slug": "business-adventures"
   },
   {
     "id": 6,
     "title": "The Personal MBA",
     "author": "Josh Kauffman",
     "rating": "4.8",
-    "image": "../../../images/business/businessRack1/personal-mba.jpg"
+    "image": "../../../images/business/businessRack1/personal-mba.jpg",
+    "slug": "personal-mba"
   },
   {
     "id": 7,
     "title": "The Four",
     "author": "Scott Galloway",
     "rating": "4.7",
-    "image": "../../../images/business/businessRack1/the-four.jpg"
+    "image": "../../../images/business/businessRack1/the-four.jpg",
+    "slug": "the-four"
   },
   {
     "id": 8,
     "title": "How I Built This",
     "author": "Guy Raz",
     "rating": "4.9",
-    "image": "../../../images/business/businessRack1/how-i-built-this.jpg"
+    "image": "../../../images/business/businessRack1/how-i-built-this.jpg",
+    "slug": "how-i-built-this"
   }
 ]

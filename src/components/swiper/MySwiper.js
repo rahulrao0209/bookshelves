@@ -9,10 +9,6 @@ import "swiper/css/pagination";
 SwiperCore.use([Pagination]);
 
 export function MySwiper({ bookDataArray }) {
-  const handleClick = (book) => {
-    console.log("Clicked on ", book.title);
-  };
-
   return (
     <Swiper
       slidesPerView={2.5}
@@ -20,21 +16,24 @@ export function MySwiper({ bookDataArray }) {
       className="mySwiper"
       style={{ maxWidth: "100vw" }}
     >
-      {bookDataArray.map((book) => (
-        <SwiperSlide key={book.id} onClick={() => handleClick(book)}>
-          <Link
-            style={{ textDecoration: "none", color: "#000000" }}
-            to="/details/rework"
-          >
-            <BookCard
-              image={book.image.childImageSharp.fluid}
-              title={book.title}
-              author={book.author}
-              rating={book.rating}
-            />
-          </Link>
-        </SwiperSlide>
-      ))}
+      {bookDataArray.map((book) => {
+        const link = `/details/${book.slug}`;
+        return (
+          <SwiperSlide key={book.id}>
+            <Link
+              style={{ textDecoration: "none", color: "#000000" }}
+              to={link}
+            >
+              <BookCard
+                image={book.image.childImageSharp.fluid}
+                title={book.title}
+                author={book.author}
+                rating={book.rating}
+              />
+            </Link>
+          </SwiperSlide>
+        );
+      })}
     </Swiper>
   );
 }

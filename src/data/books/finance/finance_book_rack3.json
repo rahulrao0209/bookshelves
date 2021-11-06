@@ -4,34 +4,39 @@
     "title": "Avoid Loss And Earn Consistently",
     "author": "Prasenjit Paul",
     "rating": "4.9",
-    "image": "../../../images/finance/financeRack3/avoid-loss-and-earn-consistently.jpg"
+    "image": "../../../images/finance/financeRack3/avoid-loss-and-earn-consistently.jpg",
+    "slug": "avoid-loss-and-earn-consistently"
   },
   {
     "id": 12,
     "title": "Diamonds In The Dust",
     "author": "Saurabh Mukherjee",
     "rating": "4.9",
-    "image": "../../../images/finance/financeRack3/diamonds-in-the-dust.jpg"
+    "image": "../../../images/finance/financeRack3/diamonds-in-the-dust.jpg",
+    "slug": "diamonds-in-the-dust"
   },
   {
     "id": 13,
     "title": "The Little Book Of Valuation",
     "author": "Ashwath Damodaran",
     "rating": "4.9",
-    "image": "../../../images/finance/financeRack3/the-little-book-of-valuation.jpg"
+    "image": "../../../images/finance/financeRack3/the-little-book-of-valuation.jpg",
+    "slug": "the-little-book-of-valuation"
   },
   {
     "id": 14,
     "title": "One Up On Wall Street",
     "author": "Peter Lynch",
     "rating": "4.8",
-    "image": "../../../images/finance/financeRack3/one-up-on-wall-street.jpg"
+    "image": "../../../images/finance/financeRack3/one-up-on-wall-street.jpg",
+    "slug": "one-up-on-wall-street"
   },
   {
     "id": 15,
     "title": "What My MBA Did Not Teach About Money",
     "author": "Sandeep Sahni & Sanjit Singh Paul",
     "rating": "4.7",
-    "image": "../../../images/finance/financeRack3/what-my-mba-did-not-teach-about-money.jpg"
+    "image": "../../../images/finance/financeRack3/what-my-mba-did-not-teach-about-money.jpg",
+    "slug": "what-my-mba-did-not-teach-about-money"
   }
 ]

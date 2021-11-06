@@ -4,34 +4,39 @@
     "title": "Art Of Statistics",
     "author": "David Spiegelhalter",
     "rating": "5.0",
-    "image": "../../../images/innovation/innovationRack2/art-of-statistics.jpg"
+    "image": "../../../images/innovation/innovationRack2/art-of-statistics.jpg",
+    "slug": "art-of-statistics"
   },
   {
     "id": 7,
     "title": "Drive",
     "author": "Daniel H. Pink",
     "rating": "4.8",
-    "image": "../../../images/innovation/innovationRack2/drive.jpg"
+    "image": "../../../images/innovation/innovationRack2/drive.jpg",
+    "slug": "drive"
   },
   {
     "id": 8,
     "title": "Genius Makers",
     "author": "Cade Metz",
     "rating": "4.7",
-    "image": "../../../images/innovation/innovationRack2/genius-makers.jpg"
+    "image": "../../../images/innovation/innovationRack2/genius-makers.jpg",
+    "slug": "genius-makers"
   },
   {
     "id": 9,
     "title": "Switch",
     "author": "Chip and Dan Heath",
     "rating": "4.9",
-    "image": "../../../images/innovation/innovationRack2/switch.jpg"
+    "image": "../../../images/innovation/innovationRack2/switch.jpg",
+    "slug": "switch"
   },
   {
     "id": 10,
     "title": "When",
     "author": "Daniel H. Pink",
     "rating": "4.9",
-    "image": "../../../images/innovation/innovationRack2/when.jpg"
+    "image": "../../../images/innovation/innovationRack2/when.jpg",
+    "slug": "when"
   }
 ]
