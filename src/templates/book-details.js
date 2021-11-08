@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import Img from "gatsby-image";
 import { Layout } from "../components/layout/Layout";
 import {
@@ -11,24 +12,39 @@ import {
   Author,
   Rated,
   PageControls,
+  BuyButton,
   DetailsPage,
 } from ".";
 import { FiveStars, FourAndHalfStars } from "../components/rating/Rating";
 import { HiOutlineArrowLeft } from "react-icons/hi";
-import { FiHeart } from "react-icons/fi";
+import { RiHeartLine, RiHeartFill } from "react-icons/ri";
 import { graphql } from "gatsby";
 import { GlobalStyle } from "../globalStyle/globalStyle";
 
 export default function BookDetails({ data }) {
+  const [isLiked, setIsLiked] = React.useState(false);
+
+  const handleClick = () => {
+    setIsLiked(!isLiked);
+  };
+
   const { html } = data.markdownRemark;
   const { title, price, author, rating } = data.markdownRemark.frontmatter;
   const bkImage =
     data.markdownRemark.frontmatter.bookImage.childImageSharp.fluid;
+
   const pageControlStyles = {
     background: "transparent",
     width: "30px",
     height: "30px",
     color: "#ACBEDA",
+  };
+
+  const likedStyle = {
+    color: "red",
+    background: "transparent",
+    width: "30px",
+    height: "30px",
   };
 
   return (
@@ -37,8 +53,16 @@ export default function BookDetails({ data }) {
       <DetailsPage>
         <Overview>
           <PageControls>
-            <HiOutlineArrowLeft style={pageControlStyles} />
-            <FiHeart style={pageControlStyles} />
+            <Link to="/" style={pageControlStyles}>
+              <HiOutlineArrowLeft style={pageControlStyles} />
+            </Link>
+            <div style={{ background: "transparent" }} onClick={handleClick}>
+              {isLiked ? (
+                <RiHeartFill style={likedStyle} />
+              ) : (
+                <RiHeartLine style={pageControlStyles} />
+              )}
+            </div>
           </PageControls>
           <Img
             style={{
@@ -69,6 +93,7 @@ export default function BookDetails({ data }) {
           <Price>Rs. {price}</Price>
         </Description>
         <Details dangerouslySetInnerHTML={{ __html: html }} />
+        <BuyButton href="https://www.amazon.in/">Get Now</BuyButton>
       </DetailsPage>
     </Layout>
   );
