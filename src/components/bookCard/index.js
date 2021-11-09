@@ -10,8 +10,10 @@ export const Card = styled.div`
   justify-content: center;
   transition: transform 1s ease;
 
-  &:hover {
-    transform: scale(1.1);
+  @media (min-width: 700px) {
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `;
 
