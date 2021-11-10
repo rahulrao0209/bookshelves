@@ -1,7 +1,7 @@
 ---
 title: Personal Mba
 slug: personal-mba
-bookImage: "../../../images/business/businessRack1/personal-mb79+/+-a.jpg"
+bookImage: "../../../images/business/businessRack1/personal-mba.jpg"
 price: "579"
 rating: "4.8"
 author: Josh Kaufman
