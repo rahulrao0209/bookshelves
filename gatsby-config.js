@@ -51,6 +51,13 @@ module.exports = {
         path: `${__dirname}/src/images/categoryBar`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `categoryBar`,
+        path: `${__dirname}/src/images/login`,
+      },
+    },
     `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -25,6 +25,5 @@ export const Title = styled.p`
   font-weight: bold;
   padding: 8px 0;
   font-family: "Carter One", cursive;
-  font-size: 28px;
   box-sizing: border-box;
 `;

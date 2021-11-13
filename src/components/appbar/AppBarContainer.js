@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { AppBar, Title } from ".";
 
-export function AppBarContainer({ children }) {
+export function AppBarContainer() {
   return (
     <>
       <AppBar>
