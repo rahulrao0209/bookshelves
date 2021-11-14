@@ -19,6 +19,7 @@ export default function LoginPage({ data }) {
       />
       <Intro>Find curated list of best selling books accross generes</Intro>
       <LoginButton>Continue with Google</LoginButton>
+      <SignupButton>Maybe Later</SignupButton>
     </div>
   );
 }
@@ -51,6 +52,10 @@ const LoginButton = styled.button`
   background: #275cab;
   color: #fff;
   box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.25);
+`;
+
+const SignupButton = styled(LoginButton)`
+  background: #a21a07;
 `;
 
 export const query = graphql`
