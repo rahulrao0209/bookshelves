@@ -1,12 +1,24 @@
-import * as React from "react";
-import { graphql } from "gatsby";
+import React, { useContext } from "react";
+import { graphql, navigate } from "gatsby";
+import { authenticateUser } from "../services/authenticateUser";
 import Img from "gatsby-image";
 import styled from "styled-components/macro";
+import { AuthContext } from "../context/auth";
 import "@fontsource/carter-one";
 import "@fontsource/poppins";
 
 export default function LoginPage({ data }) {
   const loginImage = data.allImageSharp.edges[0].node.fluid;
+  const { setUser } = useContext(AuthContext);
+
+  const handleLogin = async () => {
+    const user = await authenticateUser();
+    if (user) {
+      setUser(user.displayName);
+      navigate("/");
+    }
+  };
+
   return (
     <div>
       <Title>Bookshelves</Title>
@@ -18,8 +30,8 @@ export default function LoginPage({ data }) {
         fluid={loginImage}
       />
       <Intro>Find curated list of best selling books accross generes</Intro>
-      <LoginButton>Continue with Google</LoginButton>
-      <SignupButton>Maybe Later</SignupButton>
+      <LoginButton onClick={handleLogin}>Continue with Google</LoginButton>
+      {/* <SignupButton>Maybe Later</SignupButton> */}
     </div>
   );
 }
@@ -54,9 +66,9 @@ const LoginButton = styled.button`
   box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.25);
 `;
 
-const SignupButton = styled(LoginButton)`
-  background: #a21a07;
-`;
+// const SignupButton = styled(LoginButton)`
+//   background: #a21a07;
+// `;
 
 export const query = graphql`
   query GetLoginImage {

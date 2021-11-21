@@ -5,7 +5,7 @@ export const Footer = () => {
     <FooterContainer>
       <FooterContent>&#169; Copyright Bookshelves 2021</FooterContent>;
       <FooterContent style={{ margin: "-12px 0 32px 0" }}>
-        Built using Gatsby
+        Built using Gatsby &#38; Firebase
       </FooterContent>
     </FooterContainer>
   );
