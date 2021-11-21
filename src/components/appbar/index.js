@@ -27,3 +27,13 @@ export const Title = styled.p`
   font-family: "Carter One", cursive;
   box-sizing: border-box;
 `;
+
+export const Avatar = styled.img`
+  position: absolute;
+  left: 25px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: blue;
+  z-index: 3000;
+`;

@@ -14,7 +14,7 @@ export default function LoginPage({ data }) {
   const handleLogin = async () => {
     const user = await authenticateUser();
     if (user) {
-      setUser(user.displayName);
+      setUser(user);
       navigate("/");
     }
   };
