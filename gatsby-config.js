@@ -54,8 +54,16 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `categoryBar`,
+        name: `login`,
         path: `${__dirname}/src/images/login`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: "/images/login",
+        },
       },
     },
     `gatsby-transformer-json`,

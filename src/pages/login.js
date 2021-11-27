@@ -1,14 +1,13 @@
 import React, { useContext } from "react";
-import { graphql, navigate } from "gatsby";
+import { navigate } from "gatsby";
 import { authenticateUser } from "../services/authenticateUser";
-import Img from "gatsby-image";
+import LoginImg from "../images/login/login.svg";
 import styled from "styled-components/macro";
 import { AuthContext } from "../context/auth";
 import "@fontsource/carter-one";
 import "@fontsource/poppins";
 
-export default function LoginPage({ data }) {
-  const loginImage = data.allImageSharp.edges[0].node.fluid;
+export default function LoginPage() {
   const { setUser } = useContext(AuthContext);
 
   const handleLogin = async () => {
@@ -20,14 +19,13 @@ export default function LoginPage({ data }) {
   };
 
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <Title>Bookshelves</Title>
-      <Img
+      <LoginImg
         style={{
+          margin: "0 auto",
           width: "80%",
-          margin: "12px auto 0 auto",
         }}
-        fluid={loginImage}
       />
       <Intro>Find curated list of best selling books accross generes</Intro>
       <LoginButton onClick={handleLogin}>Continue with Google</LoginButton>
@@ -69,17 +67,3 @@ const LoginButton = styled.button`
 // const SignupButton = styled(LoginButton)`
 //   background: #a21a07;
 // `;
-
-export const query = graphql`
-  query GetLoginImage {
-    allImageSharp(filter: { fluid: { originalName: { eq: "login.png" } } }) {
-      edges {
-        node {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  }
-`;
