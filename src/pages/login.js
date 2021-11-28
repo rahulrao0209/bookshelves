@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { navigate } from "gatsby";
 import { authenticateUser } from "../services/authenticateUser";
-import LoginImg from "../images/login/login.svg";
+import Login from "../images/login/login.svg";
 import styled from "styled-components/macro";
 import { AuthContext } from "../context/auth";
 import "@fontsource/carter-one";
@@ -21,15 +21,18 @@ export default function LoginPage() {
   return (
     <div style={{ textAlign: "center" }}>
       <Title>Bookshelves</Title>
-      <LoginImg
+      <img
+        src={Login}
+        alt="an illustration for logging in"
         style={{
           margin: "0 auto",
           width: "80%",
+          maxWidth: "560px",
+          maxHeight: "400px",
         }}
       />
       <Intro>Find curated list of best selling books accross generes</Intro>
       <LoginButton onClick={handleLogin}>Continue with Google</LoginButton>
-      {/* <SignupButton>Maybe Later</SignupButton> */}
     </div>
   );
 }
