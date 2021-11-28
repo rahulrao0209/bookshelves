@@ -10,6 +10,7 @@ const IndexPage = () => {
   const [category, setCategory] = useState("Finance");
 
   const { user } = useContext(AuthContext);
+
   const assignNewCategory = (newCategory) => {
     setCategory(newCategory);
   };

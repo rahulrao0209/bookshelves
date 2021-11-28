@@ -2,8 +2,6 @@ import styled from "styled-components/macro";
 import "@fontsource/kalam/700.css";
 import "@fontsource/poppins";
 
-export const Title = styled.title``;
-
 export const BookCategory = styled.p`
   font-family: "Poppins", sans-serif;
   font-size: 22px;

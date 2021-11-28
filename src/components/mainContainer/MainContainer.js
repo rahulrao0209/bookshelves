@@ -1,13 +1,24 @@
-import React from "react";
-import { BookCategory, Title } from ".";
+import React, { useContext } from "react";
+import { ModalContext } from "../../context/modal";
+import { BookCategory } from ".";
 import { BookContainer } from "../bookContainer/BookContainer";
 
 export function MainContainer({ category }) {
+  const { isOpen, setIsOpen } = useContext(ModalContext);
+
+  const handleClick = () => {
+    console.log("isOpen: ", isOpen);
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <>
-      <Title>Bookshelves</Title>
-      <BookCategory>{category}</BookCategory>
-      <BookContainer category={category} />
+      <div onClick={handleClick}>
+        <BookCategory>{category}</BookCategory>
+        <BookContainer category={category} />
+      </div>
     </>
   );
 }
