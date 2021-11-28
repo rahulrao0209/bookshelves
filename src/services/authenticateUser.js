@@ -5,6 +5,7 @@ import {
   signInWithPopup,
   signOut,
 } from "firebase/auth";
+import { navigate } from "gatsby-link";
 
 // Initialize firebase app
 const firebaseConfig = {
@@ -46,7 +47,7 @@ export async function authenticateUser() {
 export async function logoutUser() {
   try {
     await signOut(auth);
-    window.location.reload();
+    navigate("/login");
   } catch (error) {
     console.log("Error occured while signing out user...", error.errorMessage);
   }
