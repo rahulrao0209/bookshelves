@@ -7,7 +7,6 @@ export function MainContainer({ category }) {
   const { isOpen, setIsOpen } = useContext(ModalContext);
 
   const handleClick = () => {
-    console.log("isOpen: ", isOpen);
     if (isOpen) {
       setIsOpen(false);
     }
