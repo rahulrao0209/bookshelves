@@ -91,3 +91,17 @@ export const Rated = styled.div`
   font-size: 20px;
   font-weight: 600;
 `;
+
+export const BuyButton = styled.a`
+  color: #fff;
+  margin: 16px auto 32px auto;
+  font-family: "Poppins", sans-serif;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: bold;
+  background: #275cab;
+  width: 80%;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+`;

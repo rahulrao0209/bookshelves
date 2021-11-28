@@ -25,6 +25,15 @@ export const Title = styled.p`
   font-weight: bold;
   padding: 8px 0;
   font-family: "Carter One", cursive;
-  font-size: 28px;
   box-sizing: border-box;
+`;
+
+export const Avatar = styled.img`
+  position: absolute;
+  left: 25px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: blue;
+  z-index: 3000;
 `;
