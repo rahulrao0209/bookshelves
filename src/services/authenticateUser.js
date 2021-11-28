@@ -1,5 +1,10 @@
 import { initializeApp } from "firebase/app";
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import {
+  GoogleAuthProvider,
+  getAuth,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
 
 // Initialize firebase app
 const firebaseConfig = {
@@ -13,10 +18,10 @@ const firebaseConfig = {
 };
 initializeApp(firebaseConfig);
 
-export async function authenticateUser() {
-  const provider = new GoogleAuthProvider();
-  const auth = getAuth();
+const provider = new GoogleAuthProvider();
+const auth = getAuth();
 
+export async function authenticateUser() {
   try {
     const result = await signInWithPopup(auth, provider);
     const credential = GoogleAuthProvider.credentialFromResult(result);
@@ -35,5 +40,14 @@ export async function authenticateUser() {
     console.log("email: ", email);
     console.log("credential: ", credential);
     return undefined;
+  }
+}
+
+export async function logoutUser() {
+  try {
+    await signOut(auth);
+    window.location.reload();
+  } catch (error) {
+    console.log("Error occured while signing out user...", error.errorMessage);
   }
 }
