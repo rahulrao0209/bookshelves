@@ -11,10 +11,13 @@ export function LogoutModal() {
     await logoutUser();
   };
 
-  return ReactDOM.createPortal(
-    <Modal isOpen={isOpen} onClick={handleModalClick}>
-      <Logout>Logout</Logout>
-    </Modal>,
-    document.body
-  );
+  if (typeof document !== "undefined") {
+    return ReactDOM.createPortal(
+      <Modal isOpen={isOpen} onClick={handleModalClick}>
+        <Logout>Logout</Logout>
+      </Modal>,
+      document.body
+    );
+  }
+  return null;
 }

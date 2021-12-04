@@ -6,11 +6,10 @@ export const Modal = styled.div`
   width: 200px;
   height: 60px;
   z-index: 4000;
-  // background: #efececf2;
   background: #f9f9f9;
   border-radius: 8px;
   box-shadow: 4px 8px 16px 4px rgba(163, 152, 152, 0.5);
-  position: absolute;
+  position: fixed;
   top: 50px;
   left: 30px;
 `;

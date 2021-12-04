@@ -17,7 +17,7 @@ export function AppBarContainer() {
     <>
       <AppBar>
         <Avatar
-          src={user.photoURL}
+          src={user?.photoURL}
           alt="Your Avatar"
           onClick={handleAvatarClick}
         />
